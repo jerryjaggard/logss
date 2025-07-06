@@ -1,0 +1,1861 @@
+Linux vultr 6.1.0-37-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.140-1 (2025-05-22) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Sun Jul  6 04:57:48 2025 from 198.13.52.174
+root@vultr:~# cd /www/wwwroot/top.netflare.co
+root@vultr:/www/wwwroot/top.netflare.co# sh init.sh
+--2025-07-06 05:11:29--  https://github.com/composer/composer/releases/latest/download/composer.phar
+Resolving github.com (github.com)... 20.27.177.113
+Connecting to github.com (github.com)|20.27.177.113|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://github.com/composer/composer/releases/download/2.8.9/composer.phar [following]
+--2025-07-06 05:11:29--  https://github.com/composer/composer/releases/download/2.8.9/composer.phar
+Reusing existing connection to github.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/1864363/504186e7-6590-4a78-96f7-3b55c49e548e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250706T051129Z&X-Amz-Expires=1800&X-Amz-Signature=d5a8c1e58d541fd744868f415b346ad1c4b4f86a5ff4aeb35ee1acba0f36fdc4&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dcomposer.phar&response-content-type=application%2Foctet-stream [following]
+--2025-07-06 05:11:29--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/1864363/504186e7-6590-4a78-96f7-3b55c49e548e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250706T051129Z&X-Amz-Expires=1800&X-Amz-Signature=d5a8c1e58d541fd744868f415b346ad1c4b4f86a5ff4aeb35ee1acba0f36fdc4&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dcomposer.phar&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3125568 (3.0M) [application/octet-stream]
+Saving to: ‘composer.phar’
+
+composer.phar                   100%[=======================================================>]   2.98M  --.-KB/s    in 0.01s   
+
+2025-07-06 05:11:30 (231 MB/s) - ‘composer.phar’ saved [3125568/3125568]
+
+Running 2.8.9 (2025-05-13 14:01:37) with PHP 8.3.22 on Linux / 6.1.0-37-amd64
+Do not run Composer as root/super user! See https://getcomposer.org/root for details
+Continue as root/super user [yes]? yes
+Reading ./composer.json (/www/wwwroot/top.netflare.co/composer.json)
+Loading config file ./composer.json (/www/wwwroot/top.netflare.co/composer.json)
+Checked CA file /etc/ssl/certs/ca-certificates.crt: valid
+Executing command (/www/wwwroot/top.netflare.co): 'git' 'branch' '-a' '--no-color' '--no-abbrev' '-v'
+Executing command (/www/wwwroot/top.netflare.co): 'git' 'describe' '--exact-match' '--tags'
+Executing command (CWD): 'git' '--version'
+Executing command (/www/wwwroot/top.netflare.co): 'git' 'log' '--pretty=%H' '-n1' 'HEAD' '--no-show-signature'
+Executing command (/www/wwwroot/top.netflare.co): 'hg' 'branch'
+Executing command (/www/wwwroot/top.netflare.co): 'fossil' 'branch' 'list'
+Executing command (/www/wwwroot/top.netflare.co): 'fossil' 'tag' 'list'
+Executing command (/www/wwwroot/top.netflare.co): 'svn' 'info' '--xml'
+Failed to initialize global composer: Composer could not find the config file: /root/.config/composer/composer.json
+
+No composer.lock file present. Updating dependencies to latest instead of installing from lock file. See https://getcomposer.org/install for more information.
+Loading composer repositories with package information
+Reading /root/.cache/composer/repo/https---repo.packagist.org/packages.json from cache
+Downloading https://repo.packagist.org/packages.json if modified
+[304] https://repo.packagist.org/packages.json
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-bacon~bacon-qr-code.json from cache
+Downloading https://repo.packagist.org/p2/bacon/bacon-qr-code.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-doctrine~dbal.json from cache
+Downloading https://repo.packagist.org/p2/doctrine/dbal.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-google~cloud-storage.json from cache
+Downloading https://repo.packagist.org/p2/google/cloud-storage.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-google~recaptcha.json from cache
+Downloading https://repo.packagist.org/p2/google/recaptcha.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-guzzlehttp~guzzle.json from cache
+Downloading https://repo.packagist.org/p2/guzzlehttp/guzzle.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-laravel~framework.json from cache
+Downloading https://repo.packagist.org/p2/laravel/framework.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-laravel~horizon.json from cache
+Downloading https://repo.packagist.org/p2/laravel/horizon.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-laravel~octane.json from cache
+Downloading https://repo.packagist.org/p2/laravel/octane.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-laravel~prompts.json from cache
+Downloading https://repo.packagist.org/p2/laravel/prompts.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-laravel~sanctum.json from cache
+Downloading https://repo.packagist.org/p2/laravel/sanctum.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-laravel~tinker.json from cache
+Downloading https://repo.packagist.org/p2/laravel/tinker.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-linfo~linfo.json from cache
+Downloading https://repo.packagist.org/p2/linfo/linfo.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-paragonie~sodium_compat.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-php-curl-class~php-curl-class.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-spatie~db-dumper.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-stripe~stripe-php.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~http-client.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~mailgun-mailer.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~yaml.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-zoujingli~ip2region.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-barryvdh~laravel-debugbar.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-fakerphp~faker.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-larastan~larastan.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-mockery~mockery.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-nunomaduro~collision.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-orangehill~iseed.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-phpunit~phpunit.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-spatie~laravel-ignition.json from cache
+[304] https://repo.packagist.org/p2/bacon/bacon-qr-code.json
+Downloading https://repo.packagist.org/p2/paragonie/sodium_compat.json if modified
+[304] https://repo.packagist.org/p2/laravel/prompts.json
+Downloading https://repo.packagist.org/p2/php-curl-class/php-curl-class.json if modified
+[304] https://repo.packagist.org/p2/doctrine/dbal.json
+Downloading https://repo.packagist.org/p2/spatie/db-dumper.json if modified
+[304] https://repo.packagist.org/p2/google/cloud-storage.json
+Downloading https://repo.packagist.org/p2/stripe/stripe-php.json if modified
+[304] https://repo.packagist.org/p2/google/recaptcha.json
+Downloading https://repo.packagist.org/p2/symfony/http-client.json if modified
+[304] https://repo.packagist.org/p2/laravel/octane.json
+Downloading https://repo.packagist.org/p2/symfony/mailgun-mailer.json if modified
+[304] https://repo.packagist.org/p2/laravel/framework.json
+Downloading https://repo.packagist.org/p2/symfony/yaml.json if modified
+[304] https://repo.packagist.org/p2/guzzlehttp/guzzle.json
+[304] https://repo.packagist.org/p2/laravel/sanctum.json
+Downloading https://repo.packagist.org/p2/zoujingli/ip2region.json if modified
+Downloading https://repo.packagist.org/p2/barryvdh/laravel-debugbar.json if modified
+[304] https://repo.packagist.org/p2/laravel/horizon.json
+Downloading https://repo.packagist.org/p2/fakerphp/faker.json if modified
+[304] https://repo.packagist.org/p2/linfo/linfo.json
+Downloading https://repo.packagist.org/p2/larastan/larastan.json if modified
+[304] https://repo.packagist.org/p2/laravel/tinker.json
+Downloading https://repo.packagist.org/p2/mockery/mockery.json if modified
+[304] https://repo.packagist.org/p2/spatie/db-dumper.json
+Downloading https://repo.packagist.org/p2/nunomaduro/collision.json if modified
+[304] https://repo.packagist.org/p2/paragonie/sodium_compat.json
+Downloading https://repo.packagist.org/p2/orangehill/iseed.json if modified
+[304] https://repo.packagist.org/p2/php-curl-class/php-curl-class.json
+Downloading https://repo.packagist.org/p2/phpunit/phpunit.json if modified
+[304] https://repo.packagist.org/p2/stripe/stripe-php.json
+Downloading https://repo.packagist.org/p2/spatie/laravel-ignition.json if modified
+[304] https://repo.packagist.org/p2/symfony/http-client.json
+[304] https://repo.packagist.org/p2/symfony/mailgun-mailer.json
+[304] https://repo.packagist.org/p2/symfony/yaml.json
+[304] https://repo.packagist.org/p2/barryvdh/laravel-debugbar.json
+[304] https://repo.packagist.org/p2/zoujingli/ip2region.json
+[304] https://repo.packagist.org/p2/fakerphp/faker.json
+[304] https://repo.packagist.org/p2/mockery/mockery.json
+[304] https://repo.packagist.org/p2/larastan/larastan.json
+[304] https://repo.packagist.org/p2/nunomaduro/collision.json
+[304] https://repo.packagist.org/p2/orangehill/iseed.json
+[304] https://repo.packagist.org/p2/phpunit/phpunit.json
+[304] https://repo.packagist.org/p2/spatie/laravel-ignition.json
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-dasprid~enum.json from cache
+Downloading https://repo.packagist.org/p2/dasprid/enum.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~console.json from cache
+Downloading https://repo.packagist.org/p2/symfony/console.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-doctrine~deprecations.json from cache
+Downloading https://repo.packagist.org/p2/doctrine/deprecations.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-psr~cache.json from cache
+Downloading https://repo.packagist.org/p2/psr/cache.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-psr~log.json from cache
+Downloading https://repo.packagist.org/p2/psr/log.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-google~cloud-core.json from cache
+Downloading https://repo.packagist.org/p2/google/cloud-core.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-ramsey~uuid.json from cache
+Downloading https://repo.packagist.org/p2/ramsey/uuid.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-laminas~laminas-diactoros.json from cache
+Downloading https://repo.packagist.org/p2/laminas/laminas-diactoros.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-laravel~serializable-closure.json from cache
+Downloading https://repo.packagist.org/p2/laravel/serializable-closure.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-nesbot~carbon.json from cache
+Downloading https://repo.packagist.org/p2/nesbot/carbon.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~psr-http-message-bridge.json from cache
+Downloading https://repo.packagist.org/p2/symfony/psr-http-message-bridge.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-brick~math.json from cache
+Downloading https://repo.packagist.org/p2/brick/math.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-doctrine~inflector.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-dragonmantank~cron-expression.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-egulias~email-validator.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-fruitcake~php-cors.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-guzzlehttp~uri-template.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-league~commonmark.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-league~flysystem.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-league~flysystem-local.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-league~uri.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-monolog~monolog.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-nunomaduro~termwind.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-psr~container.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-psr~simple-cache.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~error-handler.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~finder.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~http-foundation.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~http-kernel.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~mailer.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~mime.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php83.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~process.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~routing.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~uid.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~var-dumper.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-tijsverkoyen~css-to-inline-styles.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-vlucas~phpdotenv.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-voku~portable-ascii.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-guzzlehttp~promises.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-guzzlehttp~psr7.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-psr~http-client.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~deprecation-contracts.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-illuminate~console.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-illuminate~contracts.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-illuminate~database.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-illuminate~support.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-illuminate~queue.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-psy~psysh.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-paragonie~random_compat.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~http-client-contracts.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~service-contracts.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~polyfill-ctype.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php80.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-php-debugbar~php-debugbar.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-illuminate~routing.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-illuminate~session.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-maximebf~debugbar.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-hamcrest~hamcrest-php.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-iamcal~sql-parser.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-illuminate~container.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-illuminate~http.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-illuminate~pipeline.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-phpstan~phpstan.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-phpmyadmin~sql-parser.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-filp~whoops.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-myclabs~deep-copy.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-phar-io~manifest.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-phar-io~version.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-phpunit~php-code-coverage.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-phpunit~php-file-iterator.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-phpunit~php-invoker.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-phpunit~php-text-template.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-phpunit~php-timer.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-sebastian~cli-parser.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-sebastian~code-unit.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-sebastian~comparator.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-sebastian~diff.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-sebastian~environment.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-sebastian~exporter.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-sebastian~global-state.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-sebastian~object-enumerator.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-sebastian~type.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-sebastian~version.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-staabm~side-effects-detector.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-spatie~ignition.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-spatie~flare-client-php.json from cache
+[304] https://repo.packagist.org/p2/symfony/console.json
+Downloading https://repo.packagist.org/p2/doctrine/inflector.json if modified
+[304] https://repo.packagist.org/p2/dasprid/enum.json
+[304] https://repo.packagist.org/p2/doctrine/deprecations.json
+[304] https://repo.packagist.org/p2/google/cloud-core.json
+[304] https://repo.packagist.org/p2/laminas/laminas-diactoros.json
+Downloading https://repo.packagist.org/p2/dragonmantank/cron-expression.json if modified
+Downloading https://repo.packagist.org/p2/egulias/email-validator.json if modified
+Downloading https://repo.packagist.org/p2/fruitcake/php-cors.json if modified
+Downloading https://repo.packagist.org/p2/guzzlehttp/uri-template.json if modified
+[304] https://repo.packagist.org/p2/psr/cache.json
+[304] https://repo.packagist.org/p2/psr/log.json
+[304] https://repo.packagist.org/p2/ramsey/uuid.json
+Downloading https://repo.packagist.org/p2/league/commonmark.json if modified
+Downloading https://repo.packagist.org/p2/league/flysystem.json if modified
+Downloading https://repo.packagist.org/p2/league/flysystem-local.json if modified
+[304] https://repo.packagist.org/p2/laravel/serializable-closure.json
+Downloading https://repo.packagist.org/p2/league/uri.json if modified
+[304] https://repo.packagist.org/p2/symfony/psr-http-message-bridge.json
+[304] https://repo.packagist.org/p2/doctrine/inflector.json
+Downloading https://repo.packagist.org/p2/monolog/monolog.json if modified
+Downloading https://repo.packagist.org/p2/nunomaduro/termwind.json if modified
+[304] https://repo.packagist.org/p2/nesbot/carbon.json
+Downloading https://repo.packagist.org/p2/psr/container.json if modified
+[304] https://repo.packagist.org/p2/brick/math.json
+Downloading https://repo.packagist.org/p2/psr/simple-cache.json if modified
+[304] https://repo.packagist.org/p2/dragonmantank/cron-expression.json
+Downloading https://repo.packagist.org/p2/symfony/error-handler.json if modified
+[304] https://repo.packagist.org/p2/egulias/email-validator.json
+[304] https://repo.packagist.org/p2/fruitcake/php-cors.json
+Downloading https://repo.packagist.org/p2/symfony/finder.json if modified
+Downloading https://repo.packagist.org/p2/symfony/http-foundation.json if modified
+[304] https://repo.packagist.org/p2/guzzlehttp/uri-template.json
+Downloading https://repo.packagist.org/p2/symfony/http-kernel.json if modified
+[304] https://repo.packagist.org/p2/league/flysystem.json
+Downloading https://repo.packagist.org/p2/symfony/mailer.json if modified
+[304] https://repo.packagist.org/p2/league/commonmark.json
+Downloading https://repo.packagist.org/p2/symfony/mime.json if modified
+[304] https://repo.packagist.org/p2/league/flysystem-local.json
+Downloading https://repo.packagist.org/p2/symfony/polyfill-php83.json if modified
+[304] https://repo.packagist.org/p2/league/uri.json
+Downloading https://repo.packagist.org/p2/symfony/process.json if modified
+[304] https://repo.packagist.org/p2/nunomaduro/termwind.json
+Downloading https://repo.packagist.org/p2/symfony/routing.json if modified
+[304] https://repo.packagist.org/p2/monolog/monolog.json
+[304] https://repo.packagist.org/p2/psr/container.json
+Downloading https://repo.packagist.org/p2/symfony/uid.json if modified
+Downloading https://repo.packagist.org/p2/symfony/var-dumper.json if modified
+[304] https://repo.packagist.org/p2/psr/simple-cache.json
+Downloading https://repo.packagist.org/p2/tijsverkoyen/css-to-inline-styles.json if modified
+[304] https://repo.packagist.org/p2/symfony/error-handler.json
+Downloading https://repo.packagist.org/p2/vlucas/phpdotenv.json if modified
+[304] https://repo.packagist.org/p2/symfony/http-foundation.json
+Downloading https://repo.packagist.org/p2/voku/portable-ascii.json if modified
+[304] https://repo.packagist.org/p2/symfony/finder.json
+Downloading https://repo.packagist.org/p2/guzzlehttp/promises.json if modified
+[304] https://repo.packagist.org/p2/symfony/http-kernel.json
+[304] https://repo.packagist.org/p2/symfony/mime.json
+Downloading https://repo.packagist.org/p2/guzzlehttp/psr7.json if modified
+Downloading https://repo.packagist.org/p2/psr/http-client.json if modified
+[304] https://repo.packagist.org/p2/symfony/mailer.json
+[304] https://repo.packagist.org/p2/symfony/polyfill-php83.json
+Downloading https://repo.packagist.org/p2/symfony/deprecation-contracts.json if modified
+Downloading https://repo.packagist.org/p2/illuminate/console.json if modified
+[304] https://repo.packagist.org/p2/symfony/process.json
+Downloading https://repo.packagist.org/p2/illuminate/contracts.json if modified
+[304] https://repo.packagist.org/p2/symfony/routing.json
+Downloading https://repo.packagist.org/p2/illuminate/database.json if modified
+[304] https://repo.packagist.org/p2/symfony/var-dumper.json
+Downloading https://repo.packagist.org/p2/illuminate/support.json if modified
+[304] https://repo.packagist.org/p2/symfony/uid.json
+Downloading https://repo.packagist.org/p2/illuminate/queue.json if modified
+[304] https://repo.packagist.org/p2/tijsverkoyen/css-to-inline-styles.json
+[304] https://repo.packagist.org/p2/vlucas/phpdotenv.json
+Downloading https://repo.packagist.org/p2/psy/psysh.json if modified
+Downloading https://repo.packagist.org/p2/paragonie/random_compat.json if modified
+[304] https://repo.packagist.org/p2/voku/portable-ascii.json
+[304] https://repo.packagist.org/p2/guzzlehttp/promises.json
+Downloading https://repo.packagist.org/p2/symfony/http-client-contracts.json if modified
+Downloading https://repo.packagist.org/p2/symfony/service-contracts.json if modified
+[304] https://repo.packagist.org/p2/guzzlehttp/psr7.json
+Downloading https://repo.packagist.org/p2/symfony/polyfill-ctype.json if modified
+[304] https://repo.packagist.org/p2/psr/http-client.json
+Downloading https://repo.packagist.org/p2/symfony/polyfill-php80.json if modified
+[304] https://repo.packagist.org/p2/illuminate/console.json
+Downloading https://repo.packagist.org/p2/php-debugbar/php-debugbar.json if modified
+[304] https://repo.packagist.org/p2/symfony/deprecation-contracts.json
+[304] https://repo.packagist.org/p2/illuminate/contracts.json
+[304] https://repo.packagist.org/p2/illuminate/database.json
+Downloading https://repo.packagist.org/p2/illuminate/routing.json if modified
+Downloading https://repo.packagist.org/p2/illuminate/session.json if modified
+Downloading https://repo.packagist.org/p2/maximebf/debugbar.json if modified
+[304] https://repo.packagist.org/p2/illuminate/support.json
+[304] https://repo.packagist.org/p2/illuminate/queue.json
+[304] https://repo.packagist.org/p2/psy/psysh.json
+[304] https://repo.packagist.org/p2/paragonie/random_compat.json
+[304] https://repo.packagist.org/p2/symfony/service-contracts.json
+Downloading https://repo.packagist.org/p2/hamcrest/hamcrest-php.json if modified
+Downloading https://repo.packagist.org/p2/iamcal/sql-parser.json if modified
+Downloading https://repo.packagist.org/p2/illuminate/container.json if modified
+Downloading https://repo.packagist.org/p2/illuminate/http.json if modified
+Downloading https://repo.packagist.org/p2/illuminate/pipeline.json if modified
+[304] https://repo.packagist.org/p2/symfony/http-client-contracts.json
+[304] https://repo.packagist.org/p2/symfony/polyfill-ctype.json
+[304] https://repo.packagist.org/p2/symfony/polyfill-php80.json
+[304] https://repo.packagist.org/p2/php-debugbar/php-debugbar.json
+[304] https://repo.packagist.org/p2/illuminate/routing.json
+Downloading https://repo.packagist.org/p2/phpstan/phpstan.json if modified
+Downloading https://repo.packagist.org/p2/phpmyadmin/sql-parser.json if modified
+Downloading https://repo.packagist.org/p2/filp/whoops.json if modified
+Downloading https://repo.packagist.org/p2/myclabs/deep-copy.json if modified
+Downloading https://repo.packagist.org/p2/phar-io/manifest.json if modified
+[304] https://repo.packagist.org/p2/illuminate/session.json
+[304] https://repo.packagist.org/p2/maximebf/debugbar.json
+Downloading https://repo.packagist.org/p2/phar-io/version.json if modified
+Downloading https://repo.packagist.org/p2/phpunit/php-code-coverage.json if modified
+[304] https://repo.packagist.org/p2/hamcrest/hamcrest-php.json
+[304] https://repo.packagist.org/p2/iamcal/sql-parser.json
+[304] https://repo.packagist.org/p2/illuminate/container.json
+[304] https://repo.packagist.org/p2/illuminate/http.json
+[304] https://repo.packagist.org/p2/illuminate/pipeline.json
+Downloading https://repo.packagist.org/p2/phpunit/php-file-iterator.json if modified
+Downloading https://repo.packagist.org/p2/phpunit/php-invoker.json if modified
+Downloading https://repo.packagist.org/p2/phpunit/php-text-template.json if modified
+Downloading https://repo.packagist.org/p2/phpunit/php-timer.json if modified
+Downloading https://repo.packagist.org/p2/sebastian/cli-parser.json if modified
+[304] https://repo.packagist.org/p2/phpstan/phpstan.json
+[304] https://repo.packagist.org/p2/phpmyadmin/sql-parser.json
+[304] https://repo.packagist.org/p2/filp/whoops.json
+Downloading https://repo.packagist.org/p2/sebastian/code-unit.json if modified
+Downloading https://repo.packagist.org/p2/sebastian/comparator.json if modified
+Downloading https://repo.packagist.org/p2/sebastian/diff.json if modified
+[304] https://repo.packagist.org/p2/myclabs/deep-copy.json
+[304] https://repo.packagist.org/p2/phar-io/manifest.json
+[304] https://repo.packagist.org/p2/phar-io/version.json
+Downloading https://repo.packagist.org/p2/sebastian/environment.json if modified
+Downloading https://repo.packagist.org/p2/sebastian/exporter.json if modified
+Downloading https://repo.packagist.org/p2/sebastian/global-state.json if modified
+[304] https://repo.packagist.org/p2/phpunit/php-code-coverage.json
+Downloading https://repo.packagist.org/p2/sebastian/object-enumerator.json if modified
+[304] https://repo.packagist.org/p2/phpunit/php-timer.json
+Downloading https://repo.packagist.org/p2/sebastian/type.json if modified
+[304] https://repo.packagist.org/p2/phpunit/php-invoker.json
+Downloading https://repo.packagist.org/p2/sebastian/version.json if modified
+[304] https://repo.packagist.org/p2/phpunit/php-text-template.json
+Downloading https://repo.packagist.org/p2/staabm/side-effects-detector.json if modified
+[304] https://repo.packagist.org/p2/phpunit/php-file-iterator.json
+Downloading https://repo.packagist.org/p2/spatie/ignition.json if modified
+[304] https://repo.packagist.org/p2/sebastian/code-unit.json
+[304] https://repo.packagist.org/p2/sebastian/comparator.json
+Downloading https://repo.packagist.org/p2/spatie/flare-client-php.json if modified
+[304] https://repo.packagist.org/p2/sebastian/cli-parser.json
+[304] https://repo.packagist.org/p2/sebastian/diff.json
+[304] https://repo.packagist.org/p2/sebastian/environment.json
+[304] https://repo.packagist.org/p2/sebastian/global-state.json
+[304] https://repo.packagist.org/p2/sebastian/exporter.json
+[304] https://repo.packagist.org/p2/sebastian/object-enumerator.json
+[304] https://repo.packagist.org/p2/sebastian/type.json
+[304] https://repo.packagist.org/p2/sebastian/version.json
+[304] https://repo.packagist.org/p2/staabm/side-effects-detector.json
+[304] https://repo.packagist.org/p2/spatie/ignition.json
+[304] https://repo.packagist.org/p2/spatie/flare-client-php.json
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~polyfill-mbstring.json from cache
+Downloading https://repo.packagist.org/p2/symfony/polyfill-mbstring.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~string.json from cache
+Downloading https://repo.packagist.org/p2/symfony/string.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~service-contracts.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-rize~uri-template.json from cache
+Downloading https://repo.packagist.org/p2/rize/uri-template.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-google~auth.json from cache
+Downloading https://repo.packagist.org/p2/google/auth.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-guzzlehttp~promises.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-monolog~monolog.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-psr~http-message.json from cache
+Downloading https://repo.packagist.org/p2/psr/http-message.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-google~gax.json from cache
+Downloading https://repo.packagist.org/p2/google/gax.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-guzzlehttp~psr7.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-psr~http-factory.json from cache
+Downloading https://repo.packagist.org/p2/psr/http-factory.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-brick~math.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-ramsey~collection.json from cache
+Downloading https://repo.packagist.org/p2/ramsey/collection.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php80.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~http-foundation.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-carbonphp~carbon-doctrine-types.json from cache
+Downloading https://repo.packagist.org/p2/carbonphp/carbon-doctrine-types.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-psr~clock.json from cache
+Downloading https://repo.packagist.org/p2/psr/clock.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~clock.json from cache
+Downloading https://repo.packagist.org/p2/symfony/clock.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~translation.json from cache
+Downloading https://repo.packagist.org/p2/symfony/translation.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-webmozart~assert.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-doctrine~lexer.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~polyfill-intl-idn.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-league~flysystem-local.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-league~mime-type-detection.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-league~config.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-psr~event-dispatcher.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-league~flysystem.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-league~uri-interfaces.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php83.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~event-dispatcher.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-egulias~email-validator.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~mime.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php72.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~polyfill-uuid.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~css-selector.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-graham-campbell~result-type.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-phpoption~phpoption.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-ralouphie~getallheaders.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-illuminate~collections.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-illuminate~macroable.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-illuminate~view.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-nunomaduro~termwind.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~console.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~process.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-illuminate~container.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-doctrine~inflector.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-illuminate~conditionable.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-voku~portable-ascii.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-nesbot~carbon.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-illuminate~contracts.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-illuminate~filesystem.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-illuminate~pipeline.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-laravel~serializable-closure.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-illuminate~database.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-nikic~php-parser.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~var-dumper.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-illuminate~http.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~http-kernel.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~routing.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-phar-io~version.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-sebastian~code-unit-reverse-lookup.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-sebastian~complexity.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-sebastian~lines-of-code.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-theseer~tokenizer.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-sebastian~object-reflector.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-sebastian~recursion-context.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-spatie~error-solutions.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-spatie~backtrace.json from cache
+[304] https://repo.packagist.org/p2/symfony/string.json
+[304] https://repo.packagist.org/p2/rize/uri-template.json
+Downloading https://repo.packagist.org/p2/webmozart/assert.json if modified
+Downloading https://repo.packagist.org/p2/doctrine/lexer.json if modified
+[304] https://repo.packagist.org/p2/symfony/polyfill-mbstring.json
+[304] https://repo.packagist.org/p2/google/auth.json
+[304] https://repo.packagist.org/p2/psr/http-factory.json
+Downloading https://repo.packagist.org/p2/symfony/polyfill-intl-idn.json if modified
+Downloading https://repo.packagist.org/p2/league/mime-type-detection.json if modified
+Downloading https://repo.packagist.org/p2/league/config.json if modified
+[304] https://repo.packagist.org/p2/psr/http-message.json
+[304] https://repo.packagist.org/p2/google/gax.json
+Downloading https://repo.packagist.org/p2/psr/event-dispatcher.json if modified
+Downloading https://repo.packagist.org/p2/league/uri-interfaces.json if modified
+[304] https://repo.packagist.org/p2/carbonphp/carbon-doctrine-types.json
+[304] https://repo.packagist.org/p2/psr/clock.json
+Downloading https://repo.packagist.org/p2/symfony/event-dispatcher.json if modified
+Downloading https://repo.packagist.org/p2/symfony/polyfill-php72.json if modified
+[304] https://repo.packagist.org/p2/webmozart/assert.json
+Downloading https://repo.packagist.org/p2/symfony/polyfill-uuid.json if modified
+[304] https://repo.packagist.org/p2/symfony/clock.json
+Downloading https://repo.packagist.org/p2/symfony/css-selector.json if modified
+[304] https://repo.packagist.org/p2/symfony/translation.json
+Downloading https://repo.packagist.org/p2/graham-campbell/result-type.json if modified
+[304] https://repo.packagist.org/p2/doctrine/lexer.json
+[304] https://repo.packagist.org/p2/symfony/polyfill-intl-idn.json
+Downloading https://repo.packagist.org/p2/phpoption/phpoption.json if modified
+Downloading https://repo.packagist.org/p2/ralouphie/getallheaders.json if modified
+[304] https://repo.packagist.org/p2/league/config.json
+Downloading https://repo.packagist.org/p2/illuminate/collections.json if modified
+[304] https://repo.packagist.org/p2/league/mime-type-detection.json
+Downloading https://repo.packagist.org/p2/illuminate/macroable.json if modified
+[304] https://repo.packagist.org/p2/psr/event-dispatcher.json
+Downloading https://repo.packagist.org/p2/illuminate/view.json if modified
+[304] https://repo.packagist.org/p2/league/uri-interfaces.json
+Downloading https://repo.packagist.org/p2/illuminate/conditionable.json if modified
+[304] https://repo.packagist.org/p2/symfony/polyfill-php72.json
+Downloading https://repo.packagist.org/p2/illuminate/filesystem.json if modified
+[304] https://repo.packagist.org/p2/ramsey/collection.json
+[304] https://repo.packagist.org/p2/symfony/event-dispatcher.json
+[304] https://repo.packagist.org/p2/symfony/polyfill-uuid.json
+Downloading https://repo.packagist.org/p2/nikic/php-parser.json if modified
+Downloading https://repo.packagist.org/p2/sebastian/code-unit-reverse-lookup.json if modified
+Downloading https://repo.packagist.org/p2/sebastian/complexity.json if modified
+[304] https://repo.packagist.org/p2/symfony/css-selector.json
+[304] https://repo.packagist.org/p2/phpoption/phpoption.json
+Downloading https://repo.packagist.org/p2/sebastian/lines-of-code.json if modified
+Downloading https://repo.packagist.org/p2/theseer/tokenizer.json if modified
+[304] https://repo.packagist.org/p2/graham-campbell/result-type.json
+[304] https://repo.packagist.org/p2/illuminate/collections.json
+Downloading https://repo.packagist.org/p2/sebastian/object-reflector.json if modified
+Downloading https://repo.packagist.org/p2/sebastian/recursion-context.json if modified
+[304] https://repo.packagist.org/p2/ralouphie/getallheaders.json
+Downloading https://repo.packagist.org/p2/spatie/error-solutions.json if modified
+[304] https://repo.packagist.org/p2/illuminate/macroable.json
+[304] https://repo.packagist.org/p2/illuminate/view.json
+[304] https://repo.packagist.org/p2/illuminate/conditionable.json
+Downloading https://repo.packagist.org/p2/spatie/backtrace.json if modified
+[304] https://repo.packagist.org/p2/illuminate/filesystem.json
+[304] https://repo.packagist.org/p2/nikic/php-parser.json
+[304] https://repo.packagist.org/p2/sebastian/code-unit-reverse-lookup.json
+[304] https://repo.packagist.org/p2/sebastian/complexity.json
+[304] https://repo.packagist.org/p2/sebastian/lines-of-code.json
+[304] https://repo.packagist.org/p2/sebastian/recursion-context.json
+[304] https://repo.packagist.org/p2/theseer/tokenizer.json
+[304] https://repo.packagist.org/p2/sebastian/object-reflector.json
+[304] https://repo.packagist.org/p2/spatie/error-solutions.json
+[304] https://repo.packagist.org/p2/spatie/backtrace.json
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~mime.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-doctrine~lexer.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php73.json from cache
+Downloading https://repo.packagist.org/p2/symfony/polyfill-php73.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~string.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~contracts.json from cache
+Downloading https://repo.packagist.org/p2/symfony/contracts.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~debug.json from cache
+Downloading https://repo.packagist.org/p2/symfony/debug.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-kylekatarnls~update-helper.json from cache
+Downloading https://repo.packagist.org/p2/kylekatarnls/update-helper.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~translation.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-fruitcake~php-cors.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~error-handler.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~polyfill-intl-grapheme.json from cache
+Downloading https://repo.packagist.org/p2/symfony/polyfill-intl-grapheme.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~polyfill-intl-normalizer.json from cache
+Downloading https://repo.packagist.org/p2/symfony/polyfill-intl-normalizer.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-firebase~php-jwt.json from cache
+Downloading https://repo.packagist.org/p2/firebase/php-jwt.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-google~grpc-gcp.json from cache
+Downloading https://repo.packagist.org/p2/google/grpc-gcp.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-grpc~grpc.json from cache
+Downloading https://repo.packagist.org/p2/grpc/grpc.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-google~protobuf.json from cache
+Downloading https://repo.packagist.org/p2/google/protobuf.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-google~common-protos.json from cache
+Downloading https://repo.packagist.org/p2/google/common-protos.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-google~longrunning.json from cache
+Downloading https://repo.packagist.org/p2/google/longrunning.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~translation-contracts.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php70.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-dflydev~dot-access-data.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-nette~schema.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~polyfill-php81.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-symfony~event-dispatcher-contracts.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-illuminate~events.json from cache
+[304] https://repo.packagist.org/p2/symfony/polyfill-php73.json
+[304] https://repo.packagist.org/p2/symfony/contracts.json
+[304] https://repo.packagist.org/p2/symfony/polyfill-intl-normalizer.json
+Downloading https://repo.packagist.org/p2/symfony/translation-contracts.json if modified
+Downloading https://repo.packagist.org/p2/symfony/polyfill-php70.json if modified
+Downloading https://repo.packagist.org/p2/dflydev/dot-access-data.json if modified
+[304] https://repo.packagist.org/p2/symfony/debug.json
+[304] https://repo.packagist.org/p2/kylekatarnls/update-helper.json
+[304] https://repo.packagist.org/p2/symfony/polyfill-intl-grapheme.json
+[304] https://repo.packagist.org/p2/firebase/php-jwt.json
+Downloading https://repo.packagist.org/p2/nette/schema.json if modified
+Downloading https://repo.packagist.org/p2/symfony/polyfill-php81.json if modified
+Downloading https://repo.packagist.org/p2/symfony/event-dispatcher-contracts.json if modified
+Downloading https://repo.packagist.org/p2/illuminate/events.json if modified
+[304] https://repo.packagist.org/p2/grpc/grpc.json
+[304] https://repo.packagist.org/p2/google/protobuf.json
+[304] https://repo.packagist.org/p2/google/common-protos.json
+[304] https://repo.packagist.org/p2/google/longrunning.json
+[304] https://repo.packagist.org/p2/symfony/translation-contracts.json
+[304] https://repo.packagist.org/p2/symfony/polyfill-php70.json
+[304] https://repo.packagist.org/p2/dflydev/dot-access-data.json
+[304] https://repo.packagist.org/p2/symfony/polyfill-php81.json
+[304] https://repo.packagist.org/p2/google/grpc-gcp.json
+[304] https://repo.packagist.org/p2/symfony/event-dispatcher-contracts.json
+[304] https://repo.packagist.org/p2/nette/schema.json
+[304] https://repo.packagist.org/p2/illuminate/events.json
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-google~protobuf.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-google~auth.json from cache
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-nette~utils.json from cache
+Downloading https://repo.packagist.org/p2/nette/utils.json if modified
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-illuminate~bus.json from cache
+Downloading https://repo.packagist.org/p2/illuminate/bus.json if modified
+[304] https://repo.packagist.org/p2/illuminate/bus.json
+[304] https://repo.packagist.org/p2/nette/utils.json
+Reading /root/.cache/composer/repo/https---repo.packagist.org/provider-guzzlehttp~psr7.json from cache
+Built pool.
+Running pool optimizer.
+Pool optimizer completed in 1.630 seconds
+Found 13,394 package versions referenced in your dependency graph. 12,373 (92%) were optimized away.
+Updating dependencies
+Generating rules
+Resolving dependencies through SAT
+Looking at all rules.
+Something's changed, looking at all rules again (pass #1)
+Dependency resolution completed in 0.011 seconds
+Analyzed 1021 packages to resolve dependencies
+Analyzed 9047 rules to resolve dependencies
+Generating rules
+Resolving dependencies through SAT
+Looking at all rules.
+
+Dependency resolution completed in 0.001 seconds
+Lock file operations: 150 installs, 0 updates, 0 removals
+Installs: dasprid/enum:1.0.6, bacon/bacon-qr-code:2.0.8, symfony/finder:v7.3.0, voku/portable-ascii:2.0.3, symfony/polyfill-php80:v1.32.0, symfony/polyfill-mbstring:v1.32.0, symfony/polyfill-ctype:v1.32.0, phpoption/phpoption:1.9.3, graham-campbell/result-type:v1.1.3, vlucas/phpdotenv:v5.6.2, symfony/css-selector:v7.3.0, tijsverkoyen/css-to-inline-styles:v2.3.0, symfony/deprecation-contracts:v3.6.0, symfony/var-dumper:v7.3.1, symfony/polyfill-uuid:v1.32.0, symfony/uid:v7.3.1, symfony/routing:v7.3.0, symfony/process:v7.3.0, symfony/polyfill-php83:v1.32.0, symfony/polyfill-intl-normalizer:v1.32.0, symfony/polyfill-intl-idn:v1.32.0, symfony/mime:v7.3.0, psr/container:2.0.2, symfony/service-contracts:v3.6.0, psr/event-dispatcher:1.0.0, symfony/event-dispatcher-contracts:v3.6.0, symfony/event-dispatcher:v7.3.0, psr/log:3.0.2, doctrine/lexer:3.0.1, egulias/email-validator:4.0.4, symfony/mailer:v7.3.1, symfony/http-foundation:v7.3.1, symfony/error-handler:v7.3.1, symfony/http-kernel:v7.3.1, symfony/polyfill-intl-grapheme:v1.32.0, symfony/string:v7.3.0, symfony/console:v7.3.1, ramsey/collection:2.1.1, brick/math:0.13.1, ramsey/uuid:4.9.0, psr/simple-cache:3.0.0, nunomaduro/termwind:v2.3.1, symfony/translation-contracts:v3.6.0, symfony/translation:v7.3.1, psr/clock:1.0.0, symfony/clock:v7.3.0, carbonphp/carbon-doctrine-types:3.2.0, nesbot/carbon:3.10.1, monolog/monolog:3.9.0, psr/http-message:2.0, psr/http-factory:1.1.0, league/uri-interfaces:7.5.0, league/uri:7.5.1, league/mime-type-detection:1.16.0, league/flysystem-local:3.30.0, league/flysystem:3.30.0, nette/utils:v4.0.7, nette/schema:v1.3.2, dflydev/dot-access-data:v3.0.3, league/config:v1.2.0, league/commonmark:2.7.0, laravel/serializable-closure:v2.0.4, laravel/prompts:v0.3.5, guzzlehttp/uri-template:v1.0.4, psr/http-client:1.0.3, ralouphie/getallheaders:3.0.3, guzzlehttp/psr7:2.7.1, guzzlehttp/promises:2.2.0, guzzlehttp/guzzle:7.9.3, fruitcake/php-cors:v1.3.0, webmozart/assert:1.11.0, dragonmantank/cron-expression:v3.4.0, doctrine/inflector:2.0.10, laravel/framework:v12.19.3, php-debugbar/php-debugbar:v2.1.6, barryvdh/laravel-debugbar:v3.15.4, psr/cache:3.0.0, doctrine/deprecations:1.1.5, doctrine/dbal:4.2.4, fakerphp/faker:v1.24.1, firebase/php-jwt:v6.11.1, google/longrunning:0.4.7, google/protobuf:v4.31.1, google/common-protos:4.12.1, grpc/grpc:1.57.0, google/auth:v1.47.0, google/grpc-gcp:v0.4.1, google/gax:v1.36.1, rize/uri-template:0.4.0, google/cloud-core:v1.63.0, google/cloud-storage:v1.48.1, google/recaptcha:1.3.1, phpstan/phpstan:2.1.17, iamcal/sql-parser:v0.6, larastan/larastan:v3.5.0, laravel/horizon:v5.33.1, symfony/psr-http-message-bridge:v7.3.0, laminas/laminas-diactoros:3.6.0, laravel/octane:v2.10.0, laravel/sanctum:v4.1.1, nikic/php-parser:v5.5.0, psy/psysh:v0.12.9, laravel/tinker:v2.10.1, linfo/linfo:v4.0.8, hamcrest/hamcrest-php:v2.1.1, mockery/mockery:1.6.12, filp/whoops:2.18.3, nunomaduro/collision:v8.8.2, orangehill/iseed:v3.1.1, paragonie/random_compat:v9.99.100, paragonie/sodium_compat:v1.21.1, php-curl-class/php-curl-class:8.10.0, staabm/side-effects-detector:1.0.5, sebastian/version:5.0.2, sebastian/type:5.1.2, sebastian/recursion-context:6.0.2, sebastian/object-reflector:4.0.1, sebastian/object-enumerator:6.0.1, sebastian/global-state:7.0.2, sebastian/exporter:6.3.0, sebastian/environment:7.2.1, sebastian/diff:6.0.2, sebastian/comparator:6.3.1, sebastian/code-unit:3.0.3, sebastian/cli-parser:3.0.2, phpunit/php-timer:7.0.1, phpunit/php-text-template:4.0.1, phpunit/php-invoker:5.0.1, phpunit/php-file-iterator:5.1.0, theseer/tokenizer:1.2.3, sebastian/lines-of-code:3.0.1, sebastian/complexity:4.0.1, sebastian/code-unit-reverse-lookup:4.0.1, phpunit/php-code-coverage:11.0.10, phar-io/version:3.2.1, phar-io/manifest:2.0.4, myclabs/deep-copy:1.13.3, phpunit/phpunit:11.5.26, spatie/db-dumper:3.8.0, spatie/error-solutions:1.1.3, spatie/backtrace:1.7.4, spatie/flare-client-php:1.10.1, spatie/ignition:1.15.1, spatie/laravel-ignition:2.9.1, stripe/stripe-php:v7.128.0, symfony/http-client-contracts:v3.6.0, symfony/http-client:v7.3.1, symfony/mailgun-mailer:v7.3.1, symfony/yaml:v7.3.1, zoujingli/ip2region:v2.0.6
+  - Locking bacon/bacon-qr-code (2.0.8) from composer repo (https://repo.packagist.org)
+  - Locking barryvdh/laravel-debugbar (v3.15.4) from composer repo (https://repo.packagist.org)
+  - Locking brick/math (0.13.1) from composer repo (https://repo.packagist.org)
+  - Locking carbonphp/carbon-doctrine-types (3.2.0) from composer repo (https://repo.packagist.org)
+  - Locking dasprid/enum (1.0.6) from composer repo (https://repo.packagist.org)
+  - Locking dflydev/dot-access-data (v3.0.3) from composer repo (https://repo.packagist.org)
+  - Locking doctrine/dbal (4.2.4) from composer repo (https://repo.packagist.org)
+  - Locking doctrine/deprecations (1.1.5) from composer repo (https://repo.packagist.org)
+  - Locking doctrine/inflector (2.0.10) from composer repo (https://repo.packagist.org)
+  - Locking doctrine/lexer (3.0.1) from composer repo (https://repo.packagist.org)
+  - Locking dragonmantank/cron-expression (v3.4.0) from composer repo (https://repo.packagist.org)
+  - Locking egulias/email-validator (4.0.4) from composer repo (https://repo.packagist.org)
+  - Locking fakerphp/faker (v1.24.1) from composer repo (https://repo.packagist.org)
+  - Locking filp/whoops (2.18.3) from composer repo (https://repo.packagist.org)
+  - Locking firebase/php-jwt (v6.11.1) from composer repo (https://repo.packagist.org)
+  - Locking fruitcake/php-cors (v1.3.0) from composer repo (https://repo.packagist.org)
+  - Locking google/auth (v1.47.0) from composer repo (https://repo.packagist.org)
+  - Locking google/cloud-core (v1.63.0) from composer repo (https://repo.packagist.org)
+  - Locking google/cloud-storage (v1.48.1) from composer repo (https://repo.packagist.org)
+  - Locking google/common-protos (4.12.1) from composer repo (https://repo.packagist.org)
+  - Locking google/gax (v1.36.1) from composer repo (https://repo.packagist.org)
+  - Locking google/grpc-gcp (v0.4.1) from composer repo (https://repo.packagist.org)
+  - Locking google/longrunning (0.4.7) from composer repo (https://repo.packagist.org)
+  - Locking google/protobuf (v4.31.1) from composer repo (https://repo.packagist.org)
+  - Locking google/recaptcha (1.3.1) from composer repo (https://repo.packagist.org)
+  - Locking graham-campbell/result-type (v1.1.3) from composer repo (https://repo.packagist.org)
+  - Locking grpc/grpc (1.57.0) from composer repo (https://repo.packagist.org)
+  - Locking guzzlehttp/guzzle (7.9.3) from composer repo (https://repo.packagist.org)
+  - Locking guzzlehttp/promises (2.2.0) from composer repo (https://repo.packagist.org)
+  - Locking guzzlehttp/psr7 (2.7.1) from composer repo (https://repo.packagist.org)
+  - Locking guzzlehttp/uri-template (v1.0.4) from composer repo (https://repo.packagist.org)
+  - Locking hamcrest/hamcrest-php (v2.1.1) from composer repo (https://repo.packagist.org)
+  - Locking iamcal/sql-parser (v0.6) from composer repo (https://repo.packagist.org)
+  - Locking laminas/laminas-diactoros (3.6.0) from composer repo (https://repo.packagist.org)
+  - Locking larastan/larastan (v3.5.0) from composer repo (https://repo.packagist.org)
+  - Locking laravel/framework (v12.19.3) from composer repo (https://repo.packagist.org)
+  - Locking laravel/horizon (v5.33.1) from composer repo (https://repo.packagist.org)
+  - Locking laravel/octane (v2.10.0) from composer repo (https://repo.packagist.org)
+  - Locking laravel/prompts (v0.3.5) from composer repo (https://repo.packagist.org)
+  - Locking laravel/sanctum (v4.1.1) from composer repo (https://repo.packagist.org)
+  - Locking laravel/serializable-closure (v2.0.4) from composer repo (https://repo.packagist.org)
+  - Locking laravel/tinker (v2.10.1) from composer repo (https://repo.packagist.org)
+  - Locking league/commonmark (2.7.0) from composer repo (https://repo.packagist.org)
+  - Locking league/config (v1.2.0) from composer repo (https://repo.packagist.org)
+  - Locking league/flysystem (3.30.0) from composer repo (https://repo.packagist.org)
+  - Locking league/flysystem-local (3.30.0) from composer repo (https://repo.packagist.org)
+  - Locking league/mime-type-detection (1.16.0) from composer repo (https://repo.packagist.org)
+  - Locking league/uri (7.5.1) from composer repo (https://repo.packagist.org)
+  - Locking league/uri-interfaces (7.5.0) from composer repo (https://repo.packagist.org)
+  - Locking linfo/linfo (v4.0.8) from composer repo (https://repo.packagist.org)
+  - Locking mockery/mockery (1.6.12) from composer repo (https://repo.packagist.org)
+  - Locking monolog/monolog (3.9.0) from composer repo (https://repo.packagist.org)
+  - Locking myclabs/deep-copy (1.13.3) from composer repo (https://repo.packagist.org)
+  - Locking nesbot/carbon (3.10.1) from composer repo (https://repo.packagist.org)
+  - Locking nette/schema (v1.3.2) from composer repo (https://repo.packagist.org)
+  - Locking nette/utils (v4.0.7) from composer repo (https://repo.packagist.org)
+  - Locking nikic/php-parser (v5.5.0) from composer repo (https://repo.packagist.org)
+  - Locking nunomaduro/collision (v8.8.2) from composer repo (https://repo.packagist.org)
+  - Locking nunomaduro/termwind (v2.3.1) from composer repo (https://repo.packagist.org)
+  - Locking orangehill/iseed (v3.1.1) from composer repo (https://repo.packagist.org)
+  - Locking paragonie/random_compat (v9.99.100) from composer repo (https://repo.packagist.org)
+  - Locking paragonie/sodium_compat (v1.21.1) from composer repo (https://repo.packagist.org)
+  - Locking phar-io/manifest (2.0.4) from composer repo (https://repo.packagist.org)
+  - Locking phar-io/version (3.2.1) from composer repo (https://repo.packagist.org)
+  - Locking php-curl-class/php-curl-class (8.10.0) from composer repo (https://repo.packagist.org)
+  - Locking php-debugbar/php-debugbar (v2.1.6) from composer repo (https://repo.packagist.org)
+  - Locking phpoption/phpoption (1.9.3) from composer repo (https://repo.packagist.org)
+  - Locking phpstan/phpstan (2.1.17) from composer repo (https://repo.packagist.org)
+  - Locking phpunit/php-code-coverage (11.0.10) from composer repo (https://repo.packagist.org)
+  - Locking phpunit/php-file-iterator (5.1.0) from composer repo (https://repo.packagist.org)
+  - Locking phpunit/php-invoker (5.0.1) from composer repo (https://repo.packagist.org)
+  - Locking phpunit/php-text-template (4.0.1) from composer repo (https://repo.packagist.org)
+  - Locking phpunit/php-timer (7.0.1) from composer repo (https://repo.packagist.org)
+  - Locking phpunit/phpunit (11.5.26) from composer repo (https://repo.packagist.org)
+  - Locking psr/cache (3.0.0) from composer repo (https://repo.packagist.org)
+  - Locking psr/clock (1.0.0) from composer repo (https://repo.packagist.org)
+  - Locking psr/container (2.0.2) from composer repo (https://repo.packagist.org)
+  - Locking psr/event-dispatcher (1.0.0) from composer repo (https://repo.packagist.org)
+  - Locking psr/http-client (1.0.3) from composer repo (https://repo.packagist.org)
+  - Locking psr/http-factory (1.1.0) from composer repo (https://repo.packagist.org)
+  - Locking psr/http-message (2.0) from composer repo (https://repo.packagist.org)
+  - Locking psr/log (3.0.2) from composer repo (https://repo.packagist.org)
+  - Locking psr/simple-cache (3.0.0) from composer repo (https://repo.packagist.org)
+  - Locking psy/psysh (v0.12.9) from composer repo (https://repo.packagist.org)
+  - Locking ralouphie/getallheaders (3.0.3) from composer repo (https://repo.packagist.org)
+  - Locking ramsey/collection (2.1.1) from composer repo (https://repo.packagist.org)
+  - Locking ramsey/uuid (4.9.0) from composer repo (https://repo.packagist.org)
+  - Locking rize/uri-template (0.4.0) from composer repo (https://repo.packagist.org)
+  - Locking sebastian/cli-parser (3.0.2) from composer repo (https://repo.packagist.org)
+  - Locking sebastian/code-unit (3.0.3) from composer repo (https://repo.packagist.org)
+  - Locking sebastian/code-unit-reverse-lookup (4.0.1) from composer repo (https://repo.packagist.org)
+  - Locking sebastian/comparator (6.3.1) from composer repo (https://repo.packagist.org)
+  - Locking sebastian/complexity (4.0.1) from composer repo (https://repo.packagist.org)
+  - Locking sebastian/diff (6.0.2) from composer repo (https://repo.packagist.org)
+  - Locking sebastian/environment (7.2.1) from composer repo (https://repo.packagist.org)
+  - Locking sebastian/exporter (6.3.0) from composer repo (https://repo.packagist.org)
+  - Locking sebastian/global-state (7.0.2) from composer repo (https://repo.packagist.org)
+  - Locking sebastian/lines-of-code (3.0.1) from composer repo (https://repo.packagist.org)
+  - Locking sebastian/object-enumerator (6.0.1) from composer repo (https://repo.packagist.org)
+  - Locking sebastian/object-reflector (4.0.1) from composer repo (https://repo.packagist.org)
+  - Locking sebastian/recursion-context (6.0.2) from composer repo (https://repo.packagist.org)
+  - Locking sebastian/type (5.1.2) from composer repo (https://repo.packagist.org)
+  - Locking sebastian/version (5.0.2) from composer repo (https://repo.packagist.org)
+  - Locking spatie/backtrace (1.7.4) from composer repo (https://repo.packagist.org)
+  - Locking spatie/db-dumper (3.8.0) from composer repo (https://repo.packagist.org)
+  - Locking spatie/error-solutions (1.1.3) from composer repo (https://repo.packagist.org)
+  - Locking spatie/flare-client-php (1.10.1) from composer repo (https://repo.packagist.org)
+  - Locking spatie/ignition (1.15.1) from composer repo (https://repo.packagist.org)
+  - Locking spatie/laravel-ignition (2.9.1) from composer repo (https://repo.packagist.org)
+  - Locking staabm/side-effects-detector (1.0.5) from composer repo (https://repo.packagist.org)
+  - Locking stripe/stripe-php (v7.128.0) from composer repo (https://repo.packagist.org)
+  - Locking symfony/clock (v7.3.0) from composer repo (https://repo.packagist.org)
+  - Locking symfony/console (v7.3.1) from composer repo (https://repo.packagist.org)
+  - Locking symfony/css-selector (v7.3.0) from composer repo (https://repo.packagist.org)
+  - Locking symfony/deprecation-contracts (v3.6.0) from composer repo (https://repo.packagist.org)
+  - Locking symfony/error-handler (v7.3.1) from composer repo (https://repo.packagist.org)
+  - Locking symfony/event-dispatcher (v7.3.0) from composer repo (https://repo.packagist.org)
+  - Locking symfony/event-dispatcher-contracts (v3.6.0) from composer repo (https://repo.packagist.org)
+  - Locking symfony/finder (v7.3.0) from composer repo (https://repo.packagist.org)
+  - Locking symfony/http-client (v7.3.1) from composer repo (https://repo.packagist.org)
+  - Locking symfony/http-client-contracts (v3.6.0) from composer repo (https://repo.packagist.org)
+  - Locking symfony/http-foundation (v7.3.1) from composer repo (https://repo.packagist.org)
+  - Locking symfony/http-kernel (v7.3.1) from composer repo (https://repo.packagist.org)
+  - Locking symfony/mailer (v7.3.1) from composer repo (https://repo.packagist.org)
+  - Locking symfony/mailgun-mailer (v7.3.1) from composer repo (https://repo.packagist.org)
+  - Locking symfony/mime (v7.3.0) from composer repo (https://repo.packagist.org)
+  - Locking symfony/polyfill-ctype (v1.32.0) from composer repo (https://repo.packagist.org)
+  - Locking symfony/polyfill-intl-grapheme (v1.32.0) from composer repo (https://repo.packagist.org)
+  - Locking symfony/polyfill-intl-idn (v1.32.0) from composer repo (https://repo.packagist.org)
+  - Locking symfony/polyfill-intl-normalizer (v1.32.0) from composer repo (https://repo.packagist.org)
+  - Locking symfony/polyfill-mbstring (v1.32.0) from composer repo (https://repo.packagist.org)
+  - Locking symfony/polyfill-php80 (v1.32.0) from composer repo (https://repo.packagist.org)
+  - Locking symfony/polyfill-php83 (v1.32.0) from composer repo (https://repo.packagist.org)
+  - Locking symfony/polyfill-uuid (v1.32.0) from composer repo (https://repo.packagist.org)
+  - Locking symfony/process (v7.3.0) from composer repo (https://repo.packagist.org)
+  - Locking symfony/psr-http-message-bridge (v7.3.0) from composer repo (https://repo.packagist.org)
+  - Locking symfony/routing (v7.3.0) from composer repo (https://repo.packagist.org)
+  - Locking symfony/service-contracts (v3.6.0) from composer repo (https://repo.packagist.org)
+  - Locking symfony/string (v7.3.0) from composer repo (https://repo.packagist.org)
+  - Locking symfony/translation (v7.3.1) from composer repo (https://repo.packagist.org)
+  - Locking symfony/translation-contracts (v3.6.0) from composer repo (https://repo.packagist.org)
+  - Locking symfony/uid (v7.3.1) from composer repo (https://repo.packagist.org)
+  - Locking symfony/var-dumper (v7.3.1) from composer repo (https://repo.packagist.org)
+  - Locking symfony/yaml (v7.3.1) from composer repo (https://repo.packagist.org)
+  - Locking theseer/tokenizer (1.2.3) from composer repo (https://repo.packagist.org)
+  - Locking tijsverkoyen/css-to-inline-styles (v2.3.0) from composer repo (https://repo.packagist.org)
+  - Locking vlucas/phpdotenv (v5.6.2) from composer repo (https://repo.packagist.org)
+  - Locking voku/portable-ascii (2.0.3) from composer repo (https://repo.packagist.org)
+  - Locking webmozart/assert (1.11.0) from composer repo (https://repo.packagist.org)
+  - Locking zoujingli/ip2region (v2.0.6) from composer repo (https://repo.packagist.org)
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Reading ./composer.lock (/www/wwwroot/top.netflare.co/composer.lock)
+Package operations: 150 installs, 0 updates, 0 removals
+Installs: dasprid/enum:1.0.6, bacon/bacon-qr-code:2.0.8, symfony/finder:v7.3.0, symfony/polyfill-mbstring:v1.32.0, symfony/deprecation-contracts:v3.6.0, symfony/var-dumper:v7.3.1, psr/log:3.0.2, php-debugbar/php-debugbar:v2.1.6, voku/portable-ascii:2.0.3, symfony/polyfill-php80:v1.32.0, symfony/polyfill-ctype:v1.32.0, phpoption/phpoption:1.9.3, graham-campbell/result-type:v1.1.3, vlucas/phpdotenv:v5.6.2, symfony/css-selector:v7.3.0, tijsverkoyen/css-to-inline-styles:v2.3.0, symfony/polyfill-uuid:v1.32.0, symfony/uid:v7.3.1, symfony/routing:v7.3.0, symfony/process:v7.3.0, symfony/polyfill-php83:v1.32.0, symfony/polyfill-intl-normalizer:v1.32.0, symfony/polyfill-intl-idn:v1.32.0, symfony/mime:v7.3.0, psr/container:2.0.2, symfony/service-contracts:v3.6.0, psr/event-dispatcher:1.0.0, symfony/event-dispatcher-contracts:v3.6.0, symfony/event-dispatcher:v7.3.0, doctrine/lexer:3.0.1, egulias/email-validator:4.0.4, symfony/mailer:v7.3.1, symfony/http-foundation:v7.3.1, symfony/error-handler:v7.3.1, symfony/http-kernel:v7.3.1, symfony/polyfill-intl-grapheme:v1.32.0, symfony/string:v7.3.0, symfony/console:v7.3.1, ramsey/collection:2.1.1, brick/math:0.13.1, ramsey/uuid:4.9.0, psr/simple-cache:3.0.0, nunomaduro/termwind:v2.3.1, symfony/translation-contracts:v3.6.0, symfony/translation:v7.3.1, psr/clock:1.0.0, symfony/clock:v7.3.0, carbonphp/carbon-doctrine-types:3.2.0, nesbot/carbon:3.10.1, monolog/monolog:3.9.0, psr/http-message:2.0, psr/http-factory:1.1.0, league/uri-interfaces:7.5.0, league/uri:7.5.1, league/mime-type-detection:1.16.0, league/flysystem-local:3.30.0, league/flysystem:3.30.0, nette/utils:v4.0.7, nette/schema:v1.3.2, dflydev/dot-access-data:v3.0.3, league/config:v1.2.0, league/commonmark:2.7.0, laravel/serializable-closure:v2.0.4, laravel/prompts:v0.3.5, guzzlehttp/uri-template:v1.0.4, psr/http-client:1.0.3, ralouphie/getallheaders:3.0.3, guzzlehttp/psr7:2.7.1, guzzlehttp/promises:2.2.0, guzzlehttp/guzzle:7.9.3, fruitcake/php-cors:v1.3.0, webmozart/assert:1.11.0, dragonmantank/cron-expression:v3.4.0, doctrine/inflector:2.0.10, laravel/framework:v12.19.3, barryvdh/laravel-debugbar:v3.15.4, psr/cache:3.0.0, doctrine/deprecations:1.1.5, doctrine/dbal:4.2.4, fakerphp/faker:v1.24.1, firebase/php-jwt:v6.11.1, rize/uri-template:0.4.0, grpc/grpc:1.57.0, google/protobuf:v4.31.1, google/longrunning:0.4.7, google/auth:v1.47.0, google/grpc-gcp:v0.4.1, google/common-protos:4.12.1, google/gax:v1.36.1, google/cloud-core:v1.63.0, google/cloud-storage:v1.48.1, google/recaptcha:1.3.1, phpstan/phpstan:2.1.17, iamcal/sql-parser:v0.6, larastan/larastan:v3.5.0, laravel/horizon:v5.33.1, symfony/psr-http-message-bridge:v7.3.0, laminas/laminas-diactoros:3.6.0, laravel/octane:v2.10.0, laravel/sanctum:v4.1.1, nikic/php-parser:v5.5.0, psy/psysh:v0.12.9, laravel/tinker:v2.10.1, linfo/linfo:v4.0.8, hamcrest/hamcrest-php:v2.1.1, mockery/mockery:1.6.12, filp/whoops:2.18.3, nunomaduro/collision:v8.8.2, orangehill/iseed:v3.1.1, paragonie/random_compat:v9.99.100, paragonie/sodium_compat:v1.21.1, php-curl-class/php-curl-class:8.10.0, staabm/side-effects-detector:1.0.5, sebastian/version:5.0.2, sebastian/type:5.1.2, sebastian/recursion-context:6.0.2, sebastian/object-reflector:4.0.1, sebastian/object-enumerator:6.0.1, sebastian/global-state:7.0.2, sebastian/exporter:6.3.0, sebastian/environment:7.2.1, sebastian/diff:6.0.2, sebastian/comparator:6.3.1, sebastian/code-unit:3.0.3, sebastian/cli-parser:3.0.2, phpunit/php-timer:7.0.1, phpunit/php-text-template:4.0.1, phpunit/php-invoker:5.0.1, phpunit/php-file-iterator:5.1.0, theseer/tokenizer:1.2.3, sebastian/lines-of-code:3.0.1, sebastian/complexity:4.0.1, sebastian/code-unit-reverse-lookup:4.0.1, phpunit/php-code-coverage:11.0.10, phar-io/version:3.2.1, phar-io/manifest:2.0.4, myclabs/deep-copy:1.13.3, phpunit/phpunit:11.5.26, spatie/db-dumper:3.8.0, spatie/error-solutions:1.1.3, spatie/backtrace:1.7.4, spatie/flare-client-php:1.10.1, spatie/ignition:1.15.1, spatie/laravel-ignition:2.9.1, stripe/stripe-php:v7.128.0, symfony/http-client-contracts:v3.6.0, symfony/http-client:v7.3.1, symfony/mailgun-mailer:v7.3.1, symfony/yaml:v7.3.1, zoujingli/ip2region:v2.0.6
+Reading /root/.cache/composer/files/dasprid/enum/54d9840326474a22f344c31528b7dadfe94e75ae.zip from cache
+  - Loading dasprid/enum (1.0.6) from cache
+Reading /root/.cache/composer/files/bacon/bacon-qr-code/69c600df68b0190147f7a6f534116152509c8ca1.zip from cache
+  - Loading bacon/bacon-qr-code (2.0.8) from cache
+Reading /root/.cache/composer/files/symfony/finder/edab1927c7751bdceff786338def17b5d5d79883.zip from cache
+  - Loading symfony/finder (v7.3.0) from cache
+Reading /root/.cache/composer/files/symfony/polyfill-mbstring/4a27f8b9ff70570be237bcfd23ca14fcd9fff8e0.zip from cache
+  - Loading symfony/polyfill-mbstring (v1.32.0) from cache
+Reading /root/.cache/composer/files/symfony/deprecation-contracts/dfc31d200075ad19b62edc80db7cf393e42a752e.zip from cache
+  - Loading symfony/deprecation-contracts (v3.6.0) from cache
+Reading /root/.cache/composer/files/symfony/var-dumper/29eec129c8f5e1eaa8bc200f10db9dca63ae2c69.zip from cache
+  - Loading symfony/var-dumper (v7.3.1) from cache
+Reading /root/.cache/composer/files/psr/log/2961e31604f4f4de116b458f772c4aa21861c5b4.zip from cache
+  - Loading psr/log (3.0.2) from cache
+Reading /root/.cache/composer/files/php-debugbar/php-debugbar/0b3dc2f8ffb7b7e391a3d72ae635a36a86daf254.zip from cache
+  - Loading php-debugbar/php-debugbar (v2.1.6) from cache
+Reading /root/.cache/composer/files/voku/portable-ascii/7fb56572e26172b3fe9f2dade6a7fa006bc6bc3d.zip from cache
+  - Loading voku/portable-ascii (2.0.3) from cache
+Reading /root/.cache/composer/files/symfony/polyfill-php80/b4d6d6a990d43a5b6e5bcfc2f09015902d156362.zip from cache
+  - Loading symfony/polyfill-php80 (v1.32.0) from cache
+Reading /root/.cache/composer/files/symfony/polyfill-ctype/bc53d8673d3aba9f82416a0c7c5c9d0c27150b84.zip from cache
+  - Loading symfony/polyfill-ctype (v1.32.0) from cache
+Reading /root/.cache/composer/files/phpoption/phpoption/8f57bdbef29fa08a697e7f11e22c2a95708df5c8.zip from cache
+  - Loading phpoption/phpoption (1.9.3) from cache
+Reading /root/.cache/composer/files/graham-campbell/result-type/0dac7e9de5782168ac3dc05392cebd79f5db9227.zip from cache
+  - Loading graham-campbell/result-type (v1.1.3) from cache
+Reading /root/.cache/composer/files/vlucas/phpdotenv/286e3ab584e851687a2d3401157760aa86f4d250.zip from cache
+  - Loading vlucas/phpdotenv (v5.6.2) from cache
+Reading /root/.cache/composer/files/symfony/css-selector/6f4cdf8895ed653ffd92f6816d68085bc84148ef.zip from cache
+  - Loading symfony/css-selector (v7.3.0) from cache
+Reading /root/.cache/composer/files/tijsverkoyen/css-to-inline-styles/89f6ca37a1e184ae10c515c36473eba90a249da5.zip from cache
+  - Loading tijsverkoyen/css-to-inline-styles (v2.3.0) from cache
+Reading /root/.cache/composer/files/symfony/polyfill-uuid/38f3a431ab9147ea0df76e4db120628a54cf13ec.zip from cache
+  - Loading symfony/polyfill-uuid (v1.32.0) from cache
+Reading /root/.cache/composer/files/symfony/uid/3f6d9975b33c1ed0e09825f254dc7280bd06568e.zip from cache
+  - Loading symfony/uid (v7.3.1) from cache
+Reading /root/.cache/composer/files/symfony/routing/21246bb7040923daafec78ec51e5877e82c3f75e.zip from cache
+  - Loading symfony/routing (v7.3.0) from cache
+Reading /root/.cache/composer/files/symfony/process/e30094ef311c16f5c63b2b96fee721b8195f2df5.zip from cache
+  - Loading symfony/process (v7.3.0) from cache
+Reading /root/.cache/composer/files/symfony/polyfill-php83/a1727b1a3d51d01e19a4f532a5043289ef74e4b2.zip from cache
+  - Loading symfony/polyfill-php83 (v1.32.0) from cache
+Reading /root/.cache/composer/files/symfony/polyfill-intl-normalizer/7a827f163e8095d00cb2eec5307910ceaf9f3260.zip from cache
+  - Loading symfony/polyfill-intl-normalizer (v1.32.0) from cache
+Reading /root/.cache/composer/files/symfony/polyfill-intl-idn/805877f0ed53fba8b473f9cbf2fcb25da45ccc5f.zip from cache
+  - Loading symfony/polyfill-intl-idn (v1.32.0) from cache
+Reading /root/.cache/composer/files/symfony/mime/c9005677280d55fcc85a555a4d9fec55be70222f.zip from cache
+  - Loading symfony/mime (v7.3.0) from cache
+Reading /root/.cache/composer/files/psr/container/a0a43e15cb16e3ab95a991e1bffc813474b15cdf.zip from cache
+  - Loading psr/container (2.0.2) from cache
+Reading /root/.cache/composer/files/symfony/service-contracts/a0223ee8a9c3c0052037b408115e6fc47b863b28.zip from cache
+  - Loading symfony/service-contracts (v3.6.0) from cache
+Reading /root/.cache/composer/files/psr/event-dispatcher/8f60a8cd1b7ff4e8f9782d70d78dee877a526529.zip from cache
+  - Loading psr/event-dispatcher (1.0.0) from cache
+Reading /root/.cache/composer/files/symfony/event-dispatcher-contracts/d545b055747fbe7e21474979be0fb6654a624d6c.zip from cache
+  - Loading symfony/event-dispatcher-contracts (v3.6.0) from cache
+Reading /root/.cache/composer/files/symfony/event-dispatcher/1ea5460c2e8874ff0174a118f8766e573cf7affb.zip from cache
+  - Loading symfony/event-dispatcher (v7.3.0) from cache
+Reading /root/.cache/composer/files/doctrine/lexer/16a5c8a6d88bc11d6da175a7b0ff18e504449819.zip from cache
+  - Loading doctrine/lexer (3.0.1) from cache
+Reading /root/.cache/composer/files/egulias/email-validator/2325f9b713443a41bdd9cae876fc640df65c0c85.zip from cache
+  - Loading egulias/email-validator (4.0.4) from cache
+Reading /root/.cache/composer/files/symfony/mailer/c3a5d920c73440dbf1b240b0d71be2aaf8d46cc9.zip from cache
+  - Loading symfony/mailer (v7.3.1) from cache
+Reading /root/.cache/composer/files/symfony/http-foundation/1946085a7b0f39a6917a12fe54ef5ce5f2e729d3.zip from cache
+  - Loading symfony/http-foundation (v7.3.1) from cache
+Reading /root/.cache/composer/files/symfony/error-handler/64066e3959c9542d736a2611259ccc812e623b6a.zip from cache
+  - Loading symfony/error-handler (v7.3.1) from cache
+Reading /root/.cache/composer/files/symfony/http-kernel/35bfa82e9946f0121d8a05229ccf8f53a5406472.zip from cache
+  - Loading symfony/http-kernel (v7.3.1) from cache
+Reading /root/.cache/composer/files/symfony/polyfill-intl-grapheme/6b40f3f5ee5c2dfcdb9ab6f312ba09d4b27454bb.zip from cache
+  - Loading symfony/polyfill-intl-grapheme (v1.32.0) from cache
+Reading /root/.cache/composer/files/symfony/string/6aa8fe818818191ca372213c4cf856a76d9c577c.zip from cache
+  - Loading symfony/string (v7.3.0) from cache
+Reading /root/.cache/composer/files/symfony/console/6c620ebd806703e983f3673314dee98ac0d2e2da.zip from cache
+  - Loading symfony/console (v7.3.1) from cache
+Reading /root/.cache/composer/files/ramsey/collection/435c62c1e67306fd98f8f2041369a0e33486e402.zip from cache
+  - Loading ramsey/collection (2.1.1) from cache
+Reading /root/.cache/composer/files/brick/math/f02ee4732a885d90d0c0b9e3c443306651dc5b98.zip from cache
+  - Loading brick/math (0.13.1) from cache
+Reading /root/.cache/composer/files/ramsey/uuid/b018693eb49217fa3b2594b3e558512afc7af9bf.zip from cache
+  - Loading ramsey/uuid (4.9.0) from cache
+Reading /root/.cache/composer/files/psr/simple-cache/f30344b376a5fb0289c0491e8df6aba973ba12aa.zip from cache
+  - Loading psr/simple-cache (3.0.0) from cache
+Reading /root/.cache/composer/files/nunomaduro/termwind/b3d0cfbad8fa9da8b582f20583a247855d2ed4cb.zip from cache
+  - Loading nunomaduro/termwind (v2.3.1) from cache
+Reading /root/.cache/composer/files/symfony/translation-contracts/2a9e081fd4637d1069db21761fcf387f804286bf.zip from cache
+  - Loading symfony/translation-contracts (v3.6.0) from cache
+Reading /root/.cache/composer/files/symfony/translation/4ce2f465f85be4a4896f934c4ec013d43199b3aa.zip from cache
+  - Loading symfony/translation (v7.3.1) from cache
+Reading /root/.cache/composer/files/psr/clock/82bf02e3a8f1b35169f8d27aa93a171ae387f779.zip from cache
+  - Loading psr/clock (1.0.0) from cache
+Reading /root/.cache/composer/files/symfony/clock/77aa8256837a7766b1ce8436c8e929a9af14379d.zip from cache
+  - Loading symfony/clock (v7.3.0) from cache
+Reading /root/.cache/composer/files/carbonphp/carbon-doctrine-types/286125b8cb4236eb7b47111dd10174556e6c6c40.zip from cache
+  - Loading carbonphp/carbon-doctrine-types (3.2.0) from cache
+Reading /root/.cache/composer/files/nesbot/carbon/4298abcbf2ac735190152ed5f19e0744ce24f93c.zip from cache
+  - Loading nesbot/carbon (3.10.1) from cache
+Reading /root/.cache/composer/files/monolog/monolog/18eb8fca7e373bf709d8c2ec0667962617410c29.zip from cache
+  - Loading monolog/monolog (3.9.0) from cache
+Reading /root/.cache/composer/files/psr/http-message/e8baaf1c5537971c6192d7c56974d81e2ee099c3.zip from cache
+  - Loading psr/http-message (2.0) from cache
+Reading /root/.cache/composer/files/psr/http-factory/3dbec50111f2c1bcf13231bd100d8985d4495287.zip from cache
+  - Loading psr/http-factory (1.1.0) from cache
+Reading /root/.cache/composer/files/league/uri-interfaces/b334923d66f5252ea5fb930ef5e3b481ab352382.zip from cache
+  - Loading league/uri-interfaces (7.5.0) from cache
+Reading /root/.cache/composer/files/league/uri/0c52774585b9a00f59175c1095f716700682fccd.zip from cache
+  - Loading league/uri (7.5.1) from cache
+Reading /root/.cache/composer/files/league/mime-type-detection/f8034a72fe0e8ceaee4178d7e8c47fbcedde0de3.zip from cache
+  - Loading league/mime-type-detection (1.16.0) from cache
+Reading /root/.cache/composer/files/league/flysystem-local/e6c5ba6c70cbcea917ecdd3462a68b39c6b02f22.zip from cache
+  - Loading league/flysystem-local (3.30.0) from cache
+Reading /root/.cache/composer/files/league/flysystem/e5c2a59ba860bd3d4e3a023db56d37c4aef22dbf.zip from cache
+  - Loading league/flysystem (3.30.0) from cache
+Reading /root/.cache/composer/files/nette/utils/fc7ad63e6b43bafb921f49951f18bb9ee6b38da6.zip from cache
+  - Loading nette/utils (v4.0.7) from cache
+Reading /root/.cache/composer/files/nette/schema/b72f983daa4426aeee2a994fb28a55a3ac1c6fa4.zip from cache
+  - Loading nette/schema (v1.3.2) from cache
+Reading /root/.cache/composer/files/dflydev/dot-access-data/8e9712a1156060a9ec9f7b0065af4d53d0cda750.zip from cache
+  - Loading dflydev/dot-access-data (v3.0.3) from cache
+Reading /root/.cache/composer/files/league/config/63acc0c0da84dd8710b3a4e58a6a4e393530da19.zip from cache
+  - Loading league/config (v1.2.0) from cache
+Reading /root/.cache/composer/files/league/commonmark/384061d2eee96b9cba02a0d9936030b3cf0ac439.zip from cache
+  - Loading league/commonmark (2.7.0) from cache
+Reading /root/.cache/composer/files/laravel/serializable-closure/9334672720d1e403470d17d0288cc675412b4650.zip from cache
+  - Loading laravel/serializable-closure (v2.0.4) from cache
+Reading /root/.cache/composer/files/laravel/prompts/327d31e26d5f54d558a9e7d76b2d8d23849618c0.zip from cache
+  - Loading laravel/prompts (v0.3.5) from cache
+Reading /root/.cache/composer/files/guzzlehttp/uri-template/1edef902a92645483ecb18421c5ac312708dbdf3.zip from cache
+  - Loading guzzlehttp/uri-template (v1.0.4) from cache
+Reading /root/.cache/composer/files/psr/http-client/8a0eb9bbf4ceddbff9fd328c582c07269c8888ab.zip from cache
+  - Loading psr/http-client (1.0.3) from cache
+Reading /root/.cache/composer/files/ralouphie/getallheaders/ddc5f4c7ab3d868f5060717336a0d93475d53175.zip from cache
+  - Loading ralouphie/getallheaders (3.0.3) from cache
+Reading /root/.cache/composer/files/guzzlehttp/psr7/4a3a5259017f62734f0d0f6a1fed4c5e6c07b65a.zip from cache
+  - Loading guzzlehttp/psr7 (2.7.1) from cache
+Reading /root/.cache/composer/files/guzzlehttp/promises/37be017c89d5f1d1f6f6c5f0c6bd5dc7e688840a.zip from cache
+  - Loading guzzlehttp/promises (2.2.0) from cache
+Reading /root/.cache/composer/files/guzzlehttp/guzzle/3a47e0a5352b8dfe3b09df8370b2a80a2cd7ea7a.zip from cache
+  - Loading guzzlehttp/guzzle (7.9.3) from cache
+Reading /root/.cache/composer/files/fruitcake/php-cors/55223d35a5d1cae96ca35981a3979cda64a82c2d.zip from cache
+  - Loading fruitcake/php-cors (v1.3.0) from cache
+Reading /root/.cache/composer/files/webmozart/assert/b9bc0224905e92da07bc3de7d205f17c30035a88.zip from cache
+  - Loading webmozart/assert (1.11.0) from cache
+Reading /root/.cache/composer/files/dragonmantank/cron-expression/d2add2280490fe12c69c3ec3c337140e47ebf95f.zip from cache
+  - Loading dragonmantank/cron-expression (v3.4.0) from cache
+Reading /root/.cache/composer/files/doctrine/inflector/0ceecc6174d41ccfeb1b8c8352fe730095388401.zip from cache
+  - Loading doctrine/inflector (2.0.10) from cache
+Reading /root/.cache/composer/files/laravel/framework/350eb39bbf4567a7fa452895ed1e651cde35c4fd.zip from cache
+  - Loading laravel/framework (v12.19.3) from cache
+Reading /root/.cache/composer/files/barryvdh/laravel-debugbar/839de0607d36762ec7e8304fb495942f06a86415.zip from cache
+  - Loading barryvdh/laravel-debugbar (v3.15.4) from cache
+Reading /root/.cache/composer/files/psr/cache/b7eac5d329f3f43db02b28fa0fef1a15080f3536.zip from cache
+  - Loading psr/cache (3.0.0) from cache
+Reading /root/.cache/composer/files/doctrine/deprecations/d58309d3e2b32801668bd3ad785755224469cafa.zip from cache
+  - Loading doctrine/deprecations (1.1.5) from cache
+Reading /root/.cache/composer/files/doctrine/dbal/dc8f469fceaedbce357069cf1027b9437eebc807.zip from cache
+  - Loading doctrine/dbal (4.2.4) from cache
+Reading /root/.cache/composer/files/fakerphp/faker/cd3ee3e52b771fb0718af48c0ecde2cd7f473bdc.zip from cache
+  - Loading fakerphp/faker (v1.24.1) from cache
+Reading /root/.cache/composer/files/firebase/php-jwt/4743b053d6271324abef4fd8bad304948bdc565e.zip from cache
+  - Loading firebase/php-jwt (v6.11.1) from cache
+Reading /root/.cache/composer/files/rize/uri-template/b60a6f58d7d8b390b433ccd16ddf3195284b1609.zip from cache
+  - Loading rize/uri-template (0.4.0) from cache
+Reading /root/.cache/composer/files/grpc/grpc/739c616ca01d166a67a985fef014abb31257849c.zip from cache
+  - Loading grpc/grpc (1.57.0) from cache
+Reading /root/.cache/composer/files/google/protobuf/82d6c9964bf0219caf3f41a017dd156e87759c3d.zip from cache
+  - Loading google/protobuf (v4.31.1) from cache
+Reading /root/.cache/composer/files/google/longrunning/1d8eb3afecfd66f8c76da9fcdc44084e01ded486.zip from cache
+  - Loading google/longrunning (0.4.7) from cache
+Reading /root/.cache/composer/files/google/auth/1eb0abc8f1d7fb609cf4019bbeadfe983f7f6946.zip from cache
+  - Loading google/auth (v1.47.0) from cache
+Reading /root/.cache/composer/files/google/grpc-gcp/f20aa74e259baa48ed90d377a531115af597fde1.zip from cache
+  - Loading google/grpc-gcp (v0.4.1) from cache
+Reading /root/.cache/composer/files/google/common-protos/3756ad0127b8a439c93668b225d89de2ac4e0a38.zip from cache
+  - Loading google/common-protos (4.12.1) from cache
+Reading /root/.cache/composer/files/google/gax/d4c19312a0fca44bd785f09925eaf109b36b828a.zip from cache
+  - Loading google/gax (v1.36.1) from cache
+Reading /root/.cache/composer/files/google/cloud-core/86d4f55eefff1df0d5372921163322bf66f9fef1.zip from cache
+  - Loading google/cloud-core (v1.63.0) from cache
+Reading /root/.cache/composer/files/google/cloud-storage/0ff34d19856b55a35c9f4fae66c8390b84cfb0fa.zip from cache
+  - Loading google/cloud-storage (v1.48.1) from cache
+Reading /root/.cache/composer/files/google/recaptcha/5db153710fc73f8c1925f9e0566a2a4e2d3c4540.zip from cache
+  - Loading google/recaptcha (1.3.1) from cache
+Reading /root/.cache/composer/files/phpstan/phpstan/a2a4b84d825e10869588f715b67eec0ad6b20d7b.zip from cache
+  - Loading phpstan/phpstan (2.1.17) from cache
+Reading /root/.cache/composer/files/iamcal/sql-parser/3a99f0caea80e6379d31ea4ea133a5fa90d1de28.zip from cache
+  - Loading iamcal/sql-parser (v0.6) from cache
+Reading /root/.cache/composer/files/larastan/larastan/d7f06d425b2c3042897aec8fe3a1fa5198fb6964.zip from cache
+  - Loading larastan/larastan (v3.5.0) from cache
+Reading /root/.cache/composer/files/laravel/horizon/3595ddefa1f6139040d73d3113862a64bea87a16.zip from cache
+  - Loading laravel/horizon (v5.33.1) from cache
+Reading /root/.cache/composer/files/symfony/psr-http-message-bridge/0fce12822ca07c01a30f760040e4c0d9314824a8.zip from cache
+  - Loading symfony/psr-http-message-bridge (v7.3.0) from cache
+Reading /root/.cache/composer/files/laminas/laminas-diactoros/2fabeac3b997582f960fcd29f2c482ce30dfdec3.zip from cache
+  - Loading laminas/laminas-diactoros (3.6.0) from cache
+Reading /root/.cache/composer/files/laravel/octane/3b2a8019592bfda8e787564a18f148b2086a3c66.zip from cache
+  - Loading laravel/octane (v2.10.0) from cache
+Reading /root/.cache/composer/files/laravel/sanctum/ce429010c63b64f8aaeeb7b09ca7c9fa339828e5.zip from cache
+  - Loading laravel/sanctum (v4.1.1) from cache
+Reading /root/.cache/composer/files/nikic/php-parser/71718c0686b1364782ffe9fce05c99feecae0026.zip from cache
+  - Loading nikic/php-parser (v5.5.0) from cache
+Reading /root/.cache/composer/files/psy/psysh/a1b64270d5db9fbbf49c886df3356d781a7fb3ce.zip from cache
+  - Loading psy/psysh (v0.12.9) from cache
+Reading /root/.cache/composer/files/laravel/tinker/c3f0a7652e2b0ffde0f58e1e90d987b1fb63145d.zip from cache
+  - Loading laravel/tinker (v2.10.1) from cache
+Reading /root/.cache/composer/files/linfo/linfo/d7b63883b88910502eba915398b148f54100a934.zip from cache
+  - Loading linfo/linfo (v4.0.8) from cache
+Reading /root/.cache/composer/files/hamcrest/hamcrest-php/7ac05900d9d3c4092f0c5ff3f56676f924aca22f.zip from cache
+  - Loading hamcrest/hamcrest-php (v2.1.1) from cache
+Reading /root/.cache/composer/files/mockery/mockery/1437e1bfd21d9aac832ae175368b2cee0e9d3719.zip from cache
+  - Loading mockery/mockery (1.6.12) from cache
+Reading /root/.cache/composer/files/filp/whoops/93f357871c11e1faaae4a0ded8493905694441b4.zip from cache
+  - Loading filp/whoops (2.18.3) from cache
+Reading /root/.cache/composer/files/nunomaduro/collision/015c86dce9f88643545f3ba6fd3b514352af0676.zip from cache
+  - Loading nunomaduro/collision (v8.8.2) from cache
+Reading /root/.cache/composer/files/orangehill/iseed/29ca50d8fa3e438db3efc409f05fa5407e4ab7b9.zip from cache
+  - Loading orangehill/iseed (v3.1.1) from cache
+Reading /root/.cache/composer/files/paragonie/random_compat/65bef60142798f103b09e948c03c9a652c469254.zip from cache
+  - Loading paragonie/random_compat (v9.99.100) from cache
+Reading /root/.cache/composer/files/paragonie/sodium_compat/0330dd20c0e54073ae1d9258f825ef95e4f4ce75.zip from cache
+  - Loading paragonie/sodium_compat (v1.21.1) from cache
+Reading /root/.cache/composer/files/php-curl-class/php-curl-class/67fa1416d7456779f006db4488f5c5d5ea0b6832.zip from cache
+  - Loading php-curl-class/php-curl-class (8.10.0) from cache
+Reading /root/.cache/composer/files/staabm/side-effects-detector/1bf967123c8eab6ad3b7d10ead807723f1487787.zip from cache
+  - Loading staabm/side-effects-detector (1.0.5) from cache
+Reading /root/.cache/composer/files/sebastian/version/9ddbebb2770481511eebf896351b698dbecd27a2.zip from cache
+  - Loading sebastian/version (5.0.2) from cache
+Reading /root/.cache/composer/files/sebastian/type/e92ed5efb6919e7f7263079fa4e9e63d9d22aba6.zip from cache
+  - Loading sebastian/type (5.1.2) from cache
+Reading /root/.cache/composer/files/sebastian/recursion-context/e778e3e921af2df33ab90d1ca5f57cc7d08de9e8.zip from cache
+  - Loading sebastian/recursion-context (6.0.2) from cache
+Reading /root/.cache/composer/files/sebastian/object-reflector/b2aeb04d3fb5de6adb035b4a337b85f005260f1e.zip from cache
+  - Loading sebastian/object-reflector (4.0.1) from cache
+Reading /root/.cache/composer/files/sebastian/object-enumerator/73bb37c12489ebeda374915dc48be1b969d6fc08.zip from cache
+  - Loading sebastian/object-enumerator (6.0.1) from cache
+Reading /root/.cache/composer/files/sebastian/global-state/b54b251ba4c376fe9a45e0fc562f49a74f58ef37.zip from cache
+  - Loading sebastian/global-state (7.0.2) from cache
+Reading /root/.cache/composer/files/sebastian/exporter/d94798f892fa6407d78f2853063e616c2c2e1096.zip from cache
+  - Loading sebastian/exporter (6.3.0) from cache
+Reading /root/.cache/composer/files/sebastian/environment/cf5ab7f5fe47d4e3f2f06963fc54f445437e07b5.zip from cache
+  - Loading sebastian/environment (7.2.1) from cache
+Reading /root/.cache/composer/files/sebastian/diff/4d29218c6f97167a77d625595048d51bd7bd6db7.zip from cache
+  - Loading sebastian/diff (6.0.2) from cache
+Reading /root/.cache/composer/files/sebastian/comparator/dbe03f33ef3ebb35b4cc4658f4b375d8dbe6729c.zip from cache
+  - Loading sebastian/comparator (6.3.1) from cache
+Reading /root/.cache/composer/files/sebastian/code-unit/947384bfe4963b28ba6df88b7f8535d68314519a.zip from cache
+  - Loading sebastian/code-unit (3.0.3) from cache
+Reading /root/.cache/composer/files/sebastian/cli-parser/7917b42dccf77da5de05886328cbe90c9c6e9fe1.zip from cache
+  - Loading sebastian/cli-parser (3.0.2) from cache
+Reading /root/.cache/composer/files/phpunit/php-timer/2645f4227496336a2aeb8bec0d8e3f16e20fd3f9.zip from cache
+  - Loading phpunit/php-timer (7.0.1) from cache
+Reading /root/.cache/composer/files/phpunit/php-text-template/f890fdccec46940b4633ad050967fc9e1ba119d4.zip from cache
+  - Loading phpunit/php-text-template (4.0.1) from cache
+Reading /root/.cache/composer/files/phpunit/php-invoker/fa21284bd3106889eb5c308e4f8977dcef31b122.zip from cache
+  - Loading phpunit/php-invoker (5.0.1) from cache
+Reading /root/.cache/composer/files/phpunit/php-file-iterator/74b3ac93571fb41aaedd36e8b865175e924542e8.zip from cache
+  - Loading phpunit/php-file-iterator (5.1.0) from cache
+Reading /root/.cache/composer/files/theseer/tokenizer/3ba48de51d423f21e5b00031d4356fe31f1a9cf7.zip from cache
+  - Loading theseer/tokenizer (1.2.3) from cache
+Reading /root/.cache/composer/files/sebastian/lines-of-code/40e8c68a54c248cd88c0c780f1bcee0e988b9921.zip from cache
+  - Loading sebastian/lines-of-code (3.0.1) from cache
+Reading /root/.cache/composer/files/sebastian/complexity/b30b4cd96bb79d012e4c35ce2e0897e9fa3a4fb2.zip from cache
+  - Loading sebastian/complexity (4.0.1) from cache
+Reading /root/.cache/composer/files/sebastian/code-unit-reverse-lookup/e647f1c3c3ac8eea993465f59c793cde56424acd.zip from cache
+  - Loading sebastian/code-unit-reverse-lookup (4.0.1) from cache
+Reading /root/.cache/composer/files/phpunit/php-code-coverage/e58552e9658d7f7e0758cd91a2dc1d125a91324a.zip from cache
+  - Loading phpunit/php-code-coverage (11.0.10) from cache
+Reading /root/.cache/composer/files/phar-io/version/1495d1d88b1ae7e031b437037ce96298d897a969.zip from cache
+  - Loading phar-io/version (3.2.1) from cache
+Reading /root/.cache/composer/files/phar-io/manifest/76bff606ca30e559b645a1f35d005f1f29c3c86e.zip from cache
+  - Loading phar-io/manifest (2.0.4) from cache
+Reading /root/.cache/composer/files/myclabs/deep-copy/f6e98062b9b78542a34861bfaa3bcfc20eca1ef0.zip from cache
+  - Loading myclabs/deep-copy (1.13.3) from cache
+Reading /root/.cache/composer/files/phpunit/phpunit/16681cc08b8e5a026e0fe6147882bd3fe7b35edf.zip from cache
+  - Loading phpunit/phpunit (11.5.26) from cache
+Reading /root/.cache/composer/files/spatie/db-dumper/b01d9449b14fcc0bc35f1f7617b51b47b1e77bce.zip from cache
+  - Loading spatie/db-dumper (3.8.0) from cache
+Reading /root/.cache/composer/files/spatie/error-solutions/2f193bc2bfba42797106605a54855b85b126c620.zip from cache
+  - Loading spatie/error-solutions (1.1.3) from cache
+Reading /root/.cache/composer/files/spatie/backtrace/024a749b3b75847b8ded9f9d841218bff8262e03.zip from cache
+  - Loading spatie/backtrace (1.7.4) from cache
+Reading /root/.cache/composer/files/spatie/flare-client-php/cf9b87893c005404ff5e7f252692ee1557c9d774.zip from cache
+  - Loading spatie/flare-client-php (1.10.1) from cache
+Reading /root/.cache/composer/files/spatie/ignition/e5fdeaacda3dd68d647eb6259a7d5f2660fcd6a1.zip from cache
+  - Loading spatie/ignition (1.15.1) from cache
+Reading /root/.cache/composer/files/spatie/laravel-ignition/2020714410b42c36ab7f7d31f10c7617e11818b5.zip from cache
+  - Loading spatie/laravel-ignition (2.9.1) from cache
+Reading /root/.cache/composer/files/stripe/stripe-php/b60d5dfd91d68cb935553666159efa1baf59276e.zip from cache
+  - Loading stripe/stripe-php (v7.128.0) from cache
+Reading /root/.cache/composer/files/symfony/http-client-contracts/a27e8ec9967f0714b94e22ab6c551a93fce4ac8e.zip from cache
+  - Loading symfony/http-client-contracts (v3.6.0) from cache
+Reading /root/.cache/composer/files/symfony/http-client/484bdbaf19286c2b4be0692fc371a712ea09ebc1.zip from cache
+  - Loading symfony/http-client (v7.3.1) from cache
+Reading /root/.cache/composer/files/symfony/mailgun-mailer/4707edd5a78dc63c2d6287dbc09fae86faba5fb9.zip from cache
+  - Loading symfony/mailgun-mailer (v7.3.1) from cache
+Reading /root/.cache/composer/files/symfony/yaml/2440c062c339026a16ff9dadaf99b3474ce7068b.zip from cache
+  - Loading symfony/yaml (v7.3.1) from cache
+Reading /root/.cache/composer/files/zoujingli/ip2region/38f244d24c6d935a1b069b4184e6d62a43072166.zip from cache
+  - Loading zoujingli/ip2region (v2.0.6) from cache
+  - Installing dasprid/enum (1.0.6): Extracting archive
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-7b93097e6eb9cf0c0c68f9b24bc68d1f.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/ab7da7be'
+  - Installing bacon/bacon-qr-code (2.0.8): Extracting archive
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-716ca2995294d60de276a7db85d7b594.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/2e9a41c4'
+  - Installing symfony/finder (v7.3.0): Extracting archive
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-4fcc048cae5231ba5e8a170880567081.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/88068681'
+  - Installing symfony/polyfill-mbstring (v1.32.0): Extracting archive
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-e77a8dfffdd9e4438e7fe0d323b2140f.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/7fd00000'
+  - Installing symfony/deprecation-contracts (v3.6.0): Extracting archive
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-76bb9634514f35285353ee5b54770387.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/a15708f5'
+  - Installing symfony/var-dumper (v7.3.1): Extracting archive
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-08053808e4a8580a24af09685c5b3938.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/5073e754'
+  - Installing psr/log (3.0.2): Extracting archive
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-736f56a08a6d97d49c493dd0040c640f.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/7db3c9fe'
+  - Installing php-debugbar/php-debugbar (v2.1.6): Extracting archive
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-6b927596a47263901951bc50b265241c.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/59629586'
+  - Installing voku/portable-ascii (2.0.3): Extracting archive
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-d653d8b589097cab2d64e45f5493d0f3.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/c2f2ce15'
+  - Installing symfony/polyfill-php80 (v1.32.0): Extracting archive
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-f755ad475878455d24392b080aebf325.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/3b1465f4'
+  - Installing symfony/polyfill-ctype (v1.32.0): Extracting archive
+  - Installing phpoption/phpoption (1.9.3): Extracting archive
+  - Installing graham-campbell/result-type (v1.1.3): Extracting archive
+  - Installing vlucas/phpdotenv (v5.6.2): Extracting archive
+  - Installing symfony/css-selector (v7.3.0): Extracting archive
+  - Installing tijsverkoyen/css-to-inline-styles (v2.3.0): Extracting archive
+  - Installing symfony/polyfill-uuid (v1.32.0): Extracting archive
+  - Installing symfony/uid (v7.3.1): Extracting archive
+  - Installing symfony/routing (v7.3.0): Extracting archive
+  - Installing symfony/process (v7.3.0): Extracting archive
+  - Installing symfony/polyfill-php83 (v1.32.0): Extracting archive
+  - Installing symfony/polyfill-intl-normalizer (v1.32.0): Extracting archive
+  - Installing symfony/polyfill-intl-idn (v1.32.0): Extracting archive
+  - Installing symfony/mime (v7.3.0): Extracting archive
+  - Installing psr/container (2.0.2): Extracting archive
+  - Installing symfony/service-contracts (v3.6.0): Extracting archive
+  - Installing psr/event-dispatcher (1.0.0): Extracting archive
+  - Installing symfony/event-dispatcher-contracts (v3.6.0): Extracting archive
+  - Installing symfony/event-dispatcher (v7.3.0): Extracting archive
+  - Installing doctrine/lexer (3.0.1): Extracting archive
+  - Installing egulias/email-validator (4.0.4): Extracting archive
+  - Installing symfony/mailer (v7.3.1): Extracting archive
+  - Installing symfony/http-foundation (v7.3.1): Extracting archive
+  - Installing symfony/error-handler (v7.3.1): Extracting archive
+  - Installing symfony/http-kernel (v7.3.1): Extracting archive
+  - Installing symfony/polyfill-intl-grapheme (v1.32.0): Extracting archive
+  - Installing symfony/string (v7.3.0): Extracting archive
+  - Installing symfony/console (v7.3.1): Extracting archive
+  - Installing ramsey/collection (2.1.1): Extracting archive
+  - Installing brick/math (0.13.1): Extracting archive
+  - Installing ramsey/uuid (4.9.0): Extracting archive
+  - Installing psr/simple-cache (3.0.0): Extracting archive
+  - Installing nunomaduro/termwind (v2.3.1): Extracting archive
+  - Installing symfony/translation-contracts (v3.6.0): Extracting archive
+  - Installing symfony/translation (v7.3.1): Extracting archive
+  - Installing psr/clock (1.0.0): Extracting archive
+  - Installing symfony/clock (v7.3.0): Extracting archive
+  - Installing carbonphp/carbon-doctrine-types (3.2.0): Extracting archive
+  - Installing nesbot/carbon (3.10.1): Extracting archive
+  - Installing monolog/monolog (3.9.0): Extracting archive
+  - Installing psr/http-message (2.0): Extracting archive
+  - Installing psr/http-factory (1.1.0): Extracting archive
+  - Installing league/uri-interfaces (7.5.0): Extracting archive
+  - Installing league/uri (7.5.1): Extracting archive
+  - Installing league/mime-type-detection (1.16.0): Extracting archive
+  - Installing league/flysystem-local (3.30.0): Extracting archive
+  - Installing league/flysystem (3.30.0): Extracting archive
+  - Installing nette/utils (v4.0.7): Extracting archive
+  - Installing nette/schema (v1.3.2): Extracting archive
+  - Installing dflydev/dot-access-data (v3.0.3): Extracting archive
+  - Installing league/config (v1.2.0): Extracting archive
+  - Installing league/commonmark (2.7.0): Extracting archive
+  - Installing laravel/serializable-closure (v2.0.4): Extracting archive
+  - Installing laravel/prompts (v0.3.5): Extracting archive
+  - Installing guzzlehttp/uri-template (v1.0.4): Extracting archive
+  - Installing psr/http-client (1.0.3): Extracting archive
+  - Installing ralouphie/getallheaders (3.0.3): Extracting archive
+  - Installing guzzlehttp/psr7 (2.7.1): Extracting archive
+  - Installing guzzlehttp/promises (2.2.0): Extracting archive
+  - Installing guzzlehttp/guzzle (7.9.3): Extracting archive
+  - Installing fruitcake/php-cors (v1.3.0): Extracting archive
+  - Installing webmozart/assert (1.11.0): Extracting archive
+  - Installing dragonmantank/cron-expression (v3.4.0): Extracting archive
+  - Installing doctrine/inflector (2.0.10): Extracting archive
+  - Installing laravel/framework (v12.19.3): Extracting archive
+  - Installing barryvdh/laravel-debugbar (v3.15.4): Extracting archive
+  - Installing psr/cache (3.0.0): Extracting archive
+  - Installing doctrine/deprecations (1.1.5): Extracting archive
+  - Installing doctrine/dbal (4.2.4): Extracting archive
+  - Installing fakerphp/faker (v1.24.1): Extracting archive
+  - Installing firebase/php-jwt (v6.11.1): Extracting archive
+  - Installing rize/uri-template (0.4.0): Extracting archive
+  - Installing grpc/grpc (1.57.0): Extracting archive
+  - Installing google/protobuf (v4.31.1): Extracting archive
+  - Installing google/longrunning (0.4.7): Extracting archive
+  - Installing google/auth (v1.47.0): Extracting archive
+  - Installing google/grpc-gcp (v0.4.1): Extracting archive
+  - Installing google/common-protos (4.12.1): Extracting archive
+  - Installing google/gax (v1.36.1): Extracting archive
+  - Installing google/cloud-core (v1.63.0): Extracting archive
+  - Installing google/cloud-storage (v1.48.1): Extracting archive
+  - Installing google/recaptcha (1.3.1): Extracting archive
+  - Installing phpstan/phpstan (2.1.17): Extracting archive
+  - Installing iamcal/sql-parser (v0.6): Extracting archive
+  - Installing larastan/larastan (v3.5.0): Extracting archive
+  - Installing laravel/horizon (v5.33.1): Extracting archive
+  - Installing symfony/psr-http-message-bridge (v7.3.0): Extracting archive
+  - Installing laminas/laminas-diactoros (3.6.0): Extracting archive
+  - Installing laravel/octane (v2.10.0): Extracting archive
+  - Installing laravel/sanctum (v4.1.1): Extracting archive
+  - Installing nikic/php-parser (v5.5.0): Extracting archive
+  - Installing psy/psysh (v0.12.9): Extracting archive
+  - Installing laravel/tinker (v2.10.1): Extracting archive
+  - Installing linfo/linfo (v4.0.8): Extracting archive
+  - Installing hamcrest/hamcrest-php (v2.1.1): Extracting archive
+  - Installing mockery/mockery (1.6.12): Extracting archive
+  - Installing filp/whoops (2.18.3): Extracting archive
+  - Installing nunomaduro/collision (v8.8.2): Extracting archive
+  - Installing orangehill/iseed (v3.1.1): Extracting archive
+  - Installing paragonie/random_compat (v9.99.100): Extracting archive
+  - Installing paragonie/sodium_compat (v1.21.1): Extracting archive
+  - Installing php-curl-class/php-curl-class (8.10.0): Extracting archive
+  - Installing staabm/side-effects-detector (1.0.5): Extracting archive
+  - Installing sebastian/version (5.0.2): Extracting archive
+  - Installing sebastian/type (5.1.2): Extracting archive
+  - Installing sebastian/recursion-context (6.0.2): Extracting archive
+  - Installing sebastian/object-reflector (4.0.1): Extracting archive
+  - Installing sebastian/object-enumerator (6.0.1): Extracting archive
+  - Installing sebastian/global-state (7.0.2): Extracting archive
+  - Installing sebastian/exporter (6.3.0): Extracting archive
+  - Installing sebastian/environment (7.2.1): Extracting archive
+  - Installing sebastian/diff (6.0.2): Extracting archive
+  - Installing sebastian/comparator (6.3.1): Extracting archive
+  - Installing sebastian/code-unit (3.0.3): Extracting archive
+  - Installing sebastian/cli-parser (3.0.2): Extracting archive
+  - Installing phpunit/php-timer (7.0.1): Extracting archive
+  - Installing phpunit/php-text-template (4.0.1): Extracting archive
+  - Installing phpunit/php-invoker (5.0.1): Extracting archive
+  - Installing phpunit/php-file-iterator (5.1.0): Extracting archive
+  - Installing theseer/tokenizer (1.2.3): Extracting archive
+  - Installing sebastian/lines-of-code (3.0.1): Extracting archive
+  - Installing sebastian/complexity (4.0.1): Extracting archive
+  - Installing sebastian/code-unit-reverse-lookup (4.0.1): Extracting archive
+  - Installing phpunit/php-code-coverage (11.0.10): Extracting archive
+  - Installing phar-io/version (3.2.1): Extracting archive
+  - Installing phar-io/manifest (2.0.4): Extracting archive
+  - Installing myclabs/deep-copy (1.13.3): Extracting archive
+  - Installing phpunit/phpunit (11.5.26): Extracting archive
+  - Installing spatie/db-dumper (3.8.0): Extracting archive
+  - Installing spatie/error-solutions (1.1.3): Extracting archive
+  - Installing spatie/backtrace (1.7.4): Extracting archive
+  - Installing spatie/flare-client-php (1.10.1): Extracting archive
+  - Installing spatie/ignition (1.15.1): Extracting archive
+  - Installing spatie/laravel-ignition (2.9.1): Extracting archive
+  - Installing stripe/stripe-php (v7.128.0): Extracting archive
+  - Installing symfony/http-client-contracts (v3.6.0): Extracting archive
+  - Installing symfony/http-client (v7.3.1): Extracting archive
+  - Installing symfony/mailgun-mailer (v7.3.1): Extracting archive
+  - Installing symfony/yaml (v7.3.1): Extracting archive
+  - Installing zoujingli/ip2region (v2.0.6): Extracting archive
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/ab7da7be'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/2e9a41c4'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/88068681'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/7fd00000'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/a15708f5'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/5073e754'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/7db3c9fe'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/59629586'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/c2f2ce15'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/3b1465f4'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-2c0f75ffac5aaf76b65569c04639e0a8.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/bf18f027'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-ddbb367ac13cbab7f7d51cf6be15dad0.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/b0ab70e2'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-227cec76bf9d6bfa04e986edc4689f04.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/eb253904'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-dc8310aaee2eb346dd74f133168dd2c1.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/35dc2dce'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-ca136657ff854fcb423938d2a1091abc.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/37c623ba'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-a883d5d9b9fd75c299272a53e69b359f.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/8f746417'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-aa201e396ed347c93f1ffcd0d1db9582.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/3f5a97d2'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-a0269ea88698f1588e1e8bf37314aea2.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/65fdabd4'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-d6ce49d206af7ebca5c5f929dcb06c25.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/da9afe42'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-bfe5cee9079cbb39a555c9866b88776b.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/643a1ff5'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/bf18f027'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/b0ab70e2'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/eb253904'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/8f746417'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/3f5a97d2'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/65fdabd4'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/35dc2dce'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/37c623ba'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/da9afe42'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/643a1ff5'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-566ab7b6ebc9204b07598e373583a0cf.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/8a7728e5'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-8b4b61f65778adb834678694283299d7.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/0afc6853'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-908d5cc4269d73dfb63683b56a68bd94.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/b489068f'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-d117607b6c403d8cecf8eb5a34a99782.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/411a9c1a'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-afeb257f6486caa5bc582db971d4299a.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/a3b0010b'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-a2607800513d93b3af6203db8593947f.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/9b324cae'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/8a7728e5'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/0afc6853'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/b489068f'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/a3b0010b'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/9b324cae'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-544c3faea79f87ea47a6103ab1279e76.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/a015084c'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-1325ca4f8088ee783cce2ab867420af1.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/64c97428'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/411a9c1a'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/a015084c'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/64c97428'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-9480c09a1eb6b6067117ff73a1dc5de3.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/6ac776f4'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-4987f81e864e12d74fadb9f62eb9576b.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/c671a2e4'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/6ac776f4'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/c671a2e4'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-fda0551f1a4b48db91629cc110209fd4.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/c5ba00a3'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-0a66f8d892165bf7c212258c2e9a495e.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/07f02f21'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-0f867061b59923394de273479e9da556.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/451a79a3'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-9599e52b87416be51497271beecf2670.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/1d7b6d7c'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-0210f13ef3fd8cff25b209ab5e8a3bd2.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/25d00e18'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/c5ba00a3'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/07f02f21'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/1d7b6d7c'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-ce0ddda4a66a3ddcc40f40375be38570.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/b9e24575'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-1f5ab8d134c5fa48c77905ab6342e8c0.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/955f9852'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-cbbf9e5dea32280197af273db02c5a91.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/a1e10e1d'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/451a79a3'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/25d00e18'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/b9e24575'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/955f9852'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-c9b56346b051b9151df1b3c5058f24ae.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/4f9565f6'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-b8003d703917021455c89ff9631dadfe.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/50a87706'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/a1e10e1d'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/4f9565f6'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/50a87706'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-3f7eff80efca90b40cf844bb448be6c6.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/a6fc80ec'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-787b1feda23c732caef20e3587546d8b.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/8611987e'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-ec63f4328e0630697a47f06fa70fd6b2.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/28915aee'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/a6fc80ec'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/8611987e'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/28915aee'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-23f54ce588d854517dde5d7c35a8d2e8.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/62621b41'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-58880ea18e5a1287f825ec7d3818f7e5.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/4ebd0e63'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-8db71fdfa57c99312d007a67ce2e3f8a.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/bf8cd6b8'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-31e5a1dc2e11fa61d33a4358ca9014a0.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/34e2695e'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/62621b41'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/4ebd0e63'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/bf8cd6b8'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/34e2695e'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-54eb64e12bc20b90983cce323c1bc7e6.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/a105d996'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-99f4afecce31dc21f51faaf283a48c67.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/5f8c55d9'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-b77603e96a747da4461d241cdca4acce.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/b3d11ed0'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/a105d996'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-92c25ca912f6846a72fc32a7b27ca958.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/9455e3d6'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-f5aa9e4034520d2ec390051edcb24e21.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/b2013f6b'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-852d671d146c490faee6f2048a9d4348.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/a6ed20cb'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/b3d11ed0'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/9455e3d6'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/b2013f6b'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/a6ed20cb'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-1b9db4bdbc9b03b44f44c55f9e9bc34e.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/c63cd9d8'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-b2e106835b6c6f3e3d3e6fed74225a9a.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/8359baf5'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-984ee0074f47e2133070a7554bb1e212.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/b45c9386'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-b7dc3793f65e7936c0db07c80090d9de.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/c04370a7'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/c63cd9d8'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/8359baf5'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/b45c9386'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/c04370a7'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-64c2489c0ffd770bb93914b49190002a.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/39d7bf61'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/39d7bf61'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-8ad6f20b3add430ded2f2113699f3f45.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/d6b632ce'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-8485dfd409ad425c155b3453fdd81bda.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/66f42b68'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-3e58ffa8a4a435c57e23e4382c09c9e9.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/148be59c'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-ad6d0fd5e8f3f810f1816635b6f2f56b.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/f9f9153b'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/5f8c55d9'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/d6b632ce'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/66f42b68'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/148be59c'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-bb41ee9ffce03f637475f4eadfc4a6e7.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/5f619cca'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-93442823ee092d70e3749686e6cd4b6a.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/94e0c390'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-fd78d4010b6b9889120c396907f2b0d7.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/66fc1e5c'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-c6369e259bb138ba7e2292e411e2d4d8.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/e5baeb13'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/f9f9153b'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/5f619cca'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/94e0c390'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/66fc1e5c'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/e5baeb13'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-f4b4955a9a7f1b1c6b1f8730cab7ee10.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/4727c47e'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/4727c47e'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-c1d738d6e48599242eae65a54f6a8c4f.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/6077935f'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-7aef25f81fd38828d8abaad06216470d.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/fc376e6e'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-dbfe668338aef3dc6842d6e65c847a03.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/54dd1a27'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-96afabc4b8b833270d76cfbcae0e689a.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/fcb5801c'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/6077935f'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/fc376e6e'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/54dd1a27'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/fcb5801c'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-07d7f8f095ddbc6778ee624d7ecd797c.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/ad3a2c62'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-9237fe561d4201f5aafd74041188ea96.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/486df466'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-5309b320702829a51c532fc18ad449ab.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/dc103e8a'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-00a95097a128b846ba02da1d79d74d27.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/f2ac469d'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-13b4ccefc8f498e9a9ef06eb205ed815.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/55196de5'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/ad3a2c62'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/486df466'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/dc103e8a'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/55196de5'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-f8dbdfcfa738d3f0f74269fd818a8edf.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/3b6aedd4'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/3b6aedd4'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-c5e495588a885dc17e001d81ca441875.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/990dca0b'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-f01342239e7c55756e2ddde8341b0eeb.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/f16f3c8d'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-217a2cc13ce21b1805b7ed71c2bf6896.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/d317f6a7'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-6fb8e79a06fb09950581daf2bd4a1a95.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/9106cd12'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/990dca0b'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/9106cd12'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-018d4e5424a8fc58e6cc86f5ee155882.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/68465aad'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-e1647cac1aa7b3d946ccc99591e1af7e.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/435b6da3'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-aaed9e2165dda79b24ec8333046bdcd3.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/6d1138b7'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-272f30eaf236a361a344b691f787a111.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/0623d08f'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/68465aad'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/0623d08f'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-cb24bc61051c4b523a19988c40a111be.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/5f224835'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/f16f3c8d'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/435b6da3'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/6d1138b7'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/5f224835'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-9881487273bee44dd843beae1650df82.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/c97d2a78'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-6774c9919b265e2a5b9cb11cb0c03d4c.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/3e14c545'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-c0c5f85106470c6e2d6bd5d637329a75.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/4ced9a92'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-b2d411f5a13e79cdf69f595975d8d56c.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/8ccf3b91'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/f2ac469d'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/c97d2a78'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/3e14c545'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/4ced9a92'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/8ccf3b91'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-e8f74d6fed8e286d5a7650fc71bd5a4c.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/91d79c19'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-953d3fb29e04453ddb831127d2384254.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/b2654ff5'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-c371b4a3282ba5646ce26f416dfd8fd2.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/2832389b'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-9c992416c3395817357e3213d0cf6fea.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/a204b75e'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/d317f6a7'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/91d79c19'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/b2654ff5'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/a204b75e'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-caee056383df1057c68bf8b0facb34fb.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/3081c8e6'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-e74e00f12072258a0e6b516b267569b7.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/22afe056'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-47eb517060ecb7ef8f2f583eff070161.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/9dddbd60'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-5ac90a805f9e0d9abfb23b1563e24cd0.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/37cb09b6'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-4094ea6d4f417b23549ee07e1d1a9e56.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/23f5cf5f'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/3081c8e6'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/22afe056'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/9dddbd60'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/37cb09b6'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/23f5cf5f'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-ef9b1bda7a9e01e04bba5a0ac0128f38.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/3ad1ea39'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-07e2cdb09124fd9c388af969be837fdb.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/eb6106d8'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-33baecf04bf873793a6bfad7b184d491.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/e0b41d30'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-a5ff0c23003f8f4dee864b637f073c66.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/0011e469'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/3ad1ea39'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/eb6106d8'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/e0b41d30'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/0011e469'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-5e2f04c2e11910e4a992f789b13f4f09.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/b9b801b9'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-bf464a9a5195b924f3fe84f7a9027d1b.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/ec060a88'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-ee112667a1b54a4d84d89863312f2f15.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/704f5a76'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-6722e656bfc7c7795ebe14ab21d0d4d4.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/9cf7bb33'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-dc474949dee6999a0c16a909485e1a6e.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/55a98e45'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/2832389b'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/b9b801b9'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/ec060a88'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/704f5a76'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/9cf7bb33'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/55a98e45'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-8cefecf47f6f8092029b33cde6706d3b.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/9561d4f8'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-95c5eb8ace9b3321c104c00736d3b1d5.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/e982094b'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-d1d7ca9c61bce2abe2d96e237c00a6c1.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/109efe38'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-13268c54d1607524279882fdda1aeffb.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/470dbc52'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/9561d4f8'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/e982094b'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/109efe38'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/470dbc52'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-ab143a714b6380833cca91b179ac7992.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/21be722a'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-3d5df0d939442859b782ccde34f93f34.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/a5e95c03'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-f5bf2d7b36fb9efb74e85458b4331081.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/7adc885a'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-4444d80f85df917ec9de9d651d6046f2.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/a52a9efe'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-3b37d5bfc9a6ca4b991ea00b68b128d0.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/e110005d'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-56a41582a4fdc9f7beabec656535b598.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/a340edf0'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/21be722a'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/a5e95c03'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/7adc885a'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/a52a9efe'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/e110005d'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/a340edf0'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-2587b3d9b742cc9982b089d169eccd3d.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/e3d768d4'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-ba2b065be641f7a9aff8dd879d891fe3.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/342e56f6'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-c9a9082be9f8c0b9dcb159400f59b6a8.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/02198ceb'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-71efbf387a491f5d1f3121b3ce96bc23.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/17820281'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/e3d768d4'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/342e56f6'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/02198ceb'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/17820281'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-8a61b6c67275251136f3e9d1eb3b22e8.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/e450e384'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-06954fc60effc45ad6887ce6f53a8e06.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/285b1dea'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-704a53d5b0fe9d4167d0443b610c58df.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/ab9f1250'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-0d564a5dfaa8a018ff5006baf8677354.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/75f9408b'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-9e72d873a57bb546816a7fa268b9c0a2.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/29a3a72f'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-559b2f60f5e48d4d1432a2e533c63c23.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/9257efda'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/e450e384'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/285b1dea'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/ab9f1250'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/75f9408b'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/29a3a72f'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/9257efda'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-9006967f7994b7c22e61f556fc32cfc5.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/3d38b11b'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-c8b48c4b6184a8b9d12cad37f600460e.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/32e8ded8'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-b791337e32d3bfefeec58a75022607ff.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/31d2d265'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-47971f1b6334be651d64198c5fa65dc1.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/089213fc'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/3d38b11b'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/32e8ded8'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/31d2d265'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/089213fc'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-597484b93521d94a2ec8ddd451d9d339.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/103de9e8'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-37418358b807db8c8c3f666f03090674.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/634c01bc'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-7b6ed103cd24398bb32ddae76a11dd26.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/8c54c859'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-fd98f7121898a397ddf9558b66553376.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/4dc61e3c'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-95c0b567c44c3a41a791a33202a7512f.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/9089502f'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-a4a4963d8a34f7f9b89da8547c5c505a.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/87ba0286'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/103de9e8'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/634c01bc'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/8c54c859'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/4dc61e3c'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/9089502f'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-97c982dd27b4cf9e7835223ec8aa96f5.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/5e739e1b'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-ebf8eee26cca31eebf1d3ce36ece2977.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/f06bcaa4'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-39a6b881c744c99599433621637776ec.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/479e05cb'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-45faf4c90642fb523b6299bfc9f44665.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/d01405a9'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/87ba0286'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/5e739e1b'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/f06bcaa4'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/479e05cb'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/d01405a9'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-639196e272e48d177112c7346c97cd3e.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/a0969233'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-ce12a7baf5528fb5d91ef8b58792ac29.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/2822eb8a'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-df8249027dd5b793da7417636d6804ca.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/5d9ed84b'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-92e3148831be1913efc64d0a4200ec65.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/59b9fdd6'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-6a8fe1c694797cd23570c8b50b02be12.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/40f98931'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/a0969233'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/2822eb8a'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/5d9ed84b'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/59b9fdd6'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/40f98931'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-3bc29060aee64ed0c774138838ec4e73.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/7c5f3bea'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-d6795b0205320a4bd5922c28d6358f58.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/6057edb5'
+Executing async command (CWD): '/usr/bin/unzip' '-qq' '/www/wwwroot/top.netflare.co/vendor/composer/tmp-90d059b3fd031eeefc6dc246f81c8c7d.zip' '-d' '/www/wwwroot/top.netflare.co/vendor/composer/b87050b5'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/7c5f3bea'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/6057edb5'
+Executing async command (CWD): 'rm' '-rf' '/www/wwwroot/top.netflare.co/vendor/composer/b87050b5'
+Downloading https://packagist.org/downloads/
+[201] https://packagist.org/downloads/
+60 package suggestions were added by new dependencies, use `composer suggest` to see details.
+Generating optimized autoload files
+> post-autoload-dump: Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> post-autoload-dump: @php artisan package:discover --ansi
+Executing command (CWD): '/www/server/php/83/bin/php' -d allow_url_fopen='1' -d disable_functions='' -d memory_limit='1536M' artisan package:discover --ansi
+
+   INFO  Discovering packages.  
+
+  barryvdh/laravel-debugbar ............................................................................................. DONE
+  laravel/horizon ....................................................................................................... DONE
+  laravel/octane ........................................................................................................ DONE
+  laravel/sanctum ....................................................................................................... DONE
+  laravel/tinker ........................................................................................................ DONE
+  nesbot/carbon ......................................................................................................... DONE
+  nunomaduro/collision .................................................................................................. DONE
+  nunomaduro/termwind ................................................................................................... DONE
+  orangehill/iseed ...................................................................................................... DONE
+  spatie/laravel-ignition ............................................................................................... DONE
+
+95 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+__    __ ____                      _  
+\ \  / /| __ )  ___   __ _ _ __ __| | 
+ \ \/ / | __ \ / _ \ / _` | '__/ _` | 
+ / /\ \ | |_) | (_) | (_| | | | (_| | 
+/_/  \_\|____/ \___/ \__,_|_|  \__,_| 
+
+ ┌ 请选择数据库类型 ────────────────────────────────────────────┐
+ │ MySQL                                                        │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ 请输入MySQL数据库地址 ───────────────────────────────────────┐
+ │ 127.0.0.1                                                    │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ 请输入MySQL数据库端口 ───────────────────────────────────────┐
+ │ 3306                                                         │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ 请输入MySQL数据库名 ─────────────────────────────────────────┐
+ │ topnft                                                       │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ 请输入MySQL数据库用户名 ─────────────────────────────────────┐
+ │ topnft                                                       │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ 请输入MySQL数据库密码 ───────────────────────────────────────┐
+ │ topnft                                                       │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ 请输入Redis地址 ─────────────────────────────────────────────┐
+ │ 127.0.0.1                                                    │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ 请输入Redis端口 ─────────────────────────────────────────────┐
+ │ 6379                                                         │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ 请输入redis密码(默认: null) ─────────────────────────────────┐
+ │                                                              │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ 请输入管理员账号 ────────────────────────────────────────────┐
+ │ aalmitech@gmail.com                                          │
+ └──────────────────────────────────────────────────────────────┘
+
+   INFO  Configuration cached successfully.  
+
+正在导入数据库请稍等...
+PDOException: SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'telegram_id' in /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Connection.php:568
+Stack trace:
+#0 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Connection.php(568): PDOStatement->execute()
+#1 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Connection.php(809): Illuminate\Database\Connection->Illuminate\Database\{closure}()
+#2 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Connection.php(776): Illuminate\Database\Connection->runQueryCallback()
+#3 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Connection.php(557): Illuminate\Database\Connection->run()
+#4 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(119): Illuminate\Database\Connection->statement()
+#5 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(618): Illuminate\Database\Schema\Blueprint->build()
+#6 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(460): Illuminate\Database\Schema\Builder->build()
+#7 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(361): Illuminate\Database\Schema\Builder->table()
+#8 /www/wwwroot/top.netflare.co/database/migrations/2024_03_20_000001_add_telegram_fields_to_users_table.php(14): Illuminate\Support\Facades\Facade::__callStatic()
+#9 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(514): Illuminate\Database\Migrations\Migration@anonymous->up()
+#10 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(439): Illuminate\Database\Migrations\Migrator->runMethod()
+#11 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(448): Illuminate\Database\Migrations\Migrator->Illuminate\Database\Migrations\{closure}()
+#12 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(250): Illuminate\Database\Migrations\Migrator->runMigration()
+#13 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php(41): Illuminate\Database\Migrations\Migrator->Illuminate\Database\Migrations\{closure}()
+#14 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(805): Illuminate\Console\View\Components\Task->render()
+#15 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(250): Illuminate\Database\Migrations\Migrator->write()
+#16 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(210): Illuminate\Database\Migrations\Migrator->runUp()
+#17 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(137): Illuminate\Database\Migrations\Migrator->runPending()
+#18 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(116): Illuminate\Database\Migrations\Migrator->run()
+#19 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(665): Illuminate\Database\Console\Migrations\MigrateCommand->Illuminate\Database\Console\Migrations\{closure}()
+#20 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(109): Illuminate\Database\Migrations\Migrator->usingConnection()
+#21 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(88): Illuminate\Database\Console\Migrations\MigrateCommand->runMigrations()
+#22 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\Database\Console\Migrations\MigrateCommand->handle()
+#23 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#24 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate\Container\Util::unwrapIfClosure()
+#25 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\Container\BoundMethod::callBoundMethod()
+#26 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\BoundMethod::call()
+#27 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Console/Command.php(209): Illuminate\Container\Container->call()
+#28 /www/wwwroot/top.netflare.co/vendor/symfony/console/Command/Command.php(318): Illuminate\Console\Command->execute()
+#29 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Console/Command.php(178): Symfony\Component\Console\Command\Command->run()
+#30 /www/wwwroot/top.netflare.co/vendor/symfony/console/Application.php(1092): Illuminate\Console\Command->run()
+#31 /www/wwwroot/top.netflare.co/vendor/symfony/console/Application.php(341): Symfony\Component\Console\Application->doRunCommand()
+#32 /www/wwwroot/top.netflare.co/vendor/symfony/console/Application.php(192): Symfony\Component\Console\Application->doRun()
+#33 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Console/Application.php(165): Symfony\Component\Console\Application->run()
+#34 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(426): Illuminate\Console\Application->call()
+#35 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(361): Illuminate\Foundation\Console\Kernel->call()
+#36 /www/wwwroot/top.netflare.co/app/Console/Commands/XboardInstall.php(153): Illuminate\Support\Facades\Facade::__callStatic()
+#37 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): App\Console\Commands\XboardInstall->handle()
+#38 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#39 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate\Container\Util::unwrapIfClosure()
+#40 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\Container\BoundMethod::callBoundMethod()
+#41 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\BoundMethod::call()
+#42 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Console/Command.php(209): Illuminate\Container\Container->call()
+#43 /www/wwwroot/top.netflare.co/vendor/symfony/console/Command/Command.php(318): Illuminate\Console\Command->execute()
+#44 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Console/Command.php(178): Symfony\Component\Console\Command\Command->run()
+#45 /www/wwwroot/top.netflare.co/vendor/symfony/console/Application.php(1092): Illuminate\Console\Command->run()
+#46 /www/wwwroot/top.netflare.co/vendor/symfony/console/Application.php(341): Symfony\Component\Console\Application->doRunCommand()
+#47 /www/wwwroot/top.netflare.co/vendor/symfony/console/Application.php(192): Symfony\Component\Console\Application->doRun()
+#48 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\Component\Console\Application->run()
+#49 /www/wwwroot/top.netflare.co/artisan(35): Illuminate\Foundation\Console\Kernel->handle()
+#50 {main}
+
+Next Illuminate\Database\QueryException: SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'telegram_id' (Connection: mysql, SQL: alter table `v2_user` add `telegram_id` bigint null after `email`) in /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+Stack trace:
+#0 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Connection.php(776): Illuminate\Database\Connection->runQueryCallback()
+#1 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Connection.php(557): Illuminate\Database\Connection->run()
+#2 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php(119): Illuminate\Database\Connection->statement()
+#3 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(618): Illuminate\Database\Schema\Blueprint->build()
+#4 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(460): Illuminate\Database\Schema\Builder->build()
+#5 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(361): Illuminate\Database\Schema\Builder->table()
+#6 /www/wwwroot/top.netflare.co/database/migrations/2024_03_20_000001_add_telegram_fields_to_users_table.php(14): Illuminate\Support\Facades\Facade::__callStatic()
+#7 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(514): Illuminate\Database\Migrations\Migration@anonymous->up()
+#8 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(439): Illuminate\Database\Migrations\Migrator->runMethod()
+#9 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(448): Illuminate\Database\Migrations\Migrator->Illuminate\Database\Migrations\{closure}()
+#10 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(250): Illuminate\Database\Migrations\Migrator->runMigration()
+#11 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php(41): Illuminate\Database\Migrations\Migrator->Illuminate\Database\Migrations\{closure}()
+#12 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(805): Illuminate\Console\View\Components\Task->render()
+#13 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(250): Illuminate\Database\Migrations\Migrator->write()
+#14 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(210): Illuminate\Database\Migrations\Migrator->runUp()
+#15 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(137): Illuminate\Database\Migrations\Migrator->runPending()
+#16 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(116): Illuminate\Database\Migrations\Migrator->run()
+#17 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(665): Illuminate\Database\Console\Migrations\MigrateCommand->Illuminate\Database\Console\Migrations\{closure}()
+#18 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(109): Illuminate\Database\Migrations\Migrator->usingConnection()
+#19 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(88): Illuminate\Database\Console\Migrations\MigrateCommand->runMigrations()
+#20 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\Database\Console\Migrations\MigrateCommand->handle()
+#21 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#22 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate\Container\Util::unwrapIfClosure()
+#23 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\Container\BoundMethod::callBoundMethod()
+#24 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\BoundMethod::call()
+#25 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Console/Command.php(209): Illuminate\Container\Container->call()
+#26 /www/wwwroot/top.netflare.co/vendor/symfony/console/Command/Command.php(318): Illuminate\Console\Command->execute()
+#27 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Console/Command.php(178): Symfony\Component\Console\Command\Command->run()
+#28 /www/wwwroot/top.netflare.co/vendor/symfony/console/Application.php(1092): Illuminate\Console\Command->run()
+#29 /www/wwwroot/top.netflare.co/vendor/symfony/console/Application.php(341): Symfony\Component\Console\Application->doRunCommand()
+#30 /www/wwwroot/top.netflare.co/vendor/symfony/console/Application.php(192): Symfony\Component\Console\Application->doRun()
+#31 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Console/Application.php(165): Symfony\Component\Console\Application->run()
+#32 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(426): Illuminate\Console\Application->call()
+#33 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(361): Illuminate\Foundation\Console\Kernel->call()
+#34 /www/wwwroot/top.netflare.co/app/Console/Commands/XboardInstall.php(153): Illuminate\Support\Facades\Facade::__callStatic()
+#35 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): App\Console\Commands\XboardInstall->handle()
+#36 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#37 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate\Container\Util::unwrapIfClosure()
+#38 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\Container\BoundMethod::callBoundMethod()
+#39 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\BoundMethod::call()
+#40 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Console/Command.php(209): Illuminate\Container\Container->call()
+#41 /www/wwwroot/top.netflare.co/vendor/symfony/console/Command/Command.php(318): Illuminate\Console\Command->execute()
+#42 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Console/Command.php(178): Symfony\Component\Console\Command\Command->run()
+#43 /www/wwwroot/top.netflare.co/vendor/symfony/console/Application.php(1092): Illuminate\Console\Command->run()
+#44 /www/wwwroot/top.netflare.co/vendor/symfony/console/Application.php(341): Symfony\Component\Console\Application->doRunCommand()
+#45 /www/wwwroot/top.netflare.co/vendor/symfony/console/Application.php(192): Symfony\Component\Console\Application->doRun()
+#46 /www/wwwroot/top.netflare.co/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\Component\Console\Application->run()
+#47 /www/wwwroot/top.netflare.co/artisan(35): Illuminate\Foundation\Console\Kernel->handle()
+#48 {main}
+🚀 Setting up Telegram integration...
+🚀 Starting Xboard Telegram Integration Setup...
+📁 Setting file permissions...
+chmod: cannot access '/app': No such file or directory
+chmod: cannot access '/app/storage': No such file or directory
+chmod: cannot access '/app/bootstrap/cache': No such file or directory
+chmod: cannot access '/app/.env': No such file or directory
+📦 Installing PHP dependencies...
+./setup_telegram.sh: line 17: cd: /app: No such file or directory
+Do not run Composer as root/super user! See https://getcomposer.org/root for details
+Continue as root/super user [yes]? yes
+Installing dependencies from lock file
+Verifying lock file contents can be installed on current platform.
+Package operations: 0 installs, 0 updates, 42 removals
+  - Removing theseer/tokenizer (1.2.3)
+  - Removing staabm/side-effects-detector (1.0.5)
+  - Removing spatie/laravel-ignition (2.9.1)
+  - Removing spatie/ignition (1.15.1)
+  - Removing spatie/flare-client-php (1.10.1)
+  - Removing spatie/error-solutions (1.1.3)
+  - Removing spatie/backtrace (1.7.4)
+  - Removing sebastian/version (5.0.2)
+  - Removing sebastian/type (5.1.2)
+  - Removing sebastian/recursion-context (6.0.2)
+  - Removing sebastian/object-reflector (4.0.1)
+  - Removing sebastian/object-enumerator (6.0.1)
+  - Removing sebastian/lines-of-code (3.0.1)
+  - Removing sebastian/global-state (7.0.2)
+  - Removing sebastian/exporter (6.3.0)
+  - Removing sebastian/environment (7.2.1)
+  - Removing sebastian/diff (6.0.2)
+  - Removing sebastian/complexity (4.0.1)
+  - Removing sebastian/comparator (6.3.1)
+  - Removing sebastian/code-unit-reverse-lookup (4.0.1)
+  - Removing sebastian/code-unit (3.0.3)
+  - Removing sebastian/cli-parser (3.0.2)
+  - Removing phpunit/phpunit (11.5.26)
+  - Removing phpunit/php-timer (7.0.1)
+  - Removing phpunit/php-text-template (4.0.1)
+  - Removing phpunit/php-invoker (5.0.1)
+  - Removing phpunit/php-file-iterator (5.1.0)
+  - Removing phpunit/php-code-coverage (11.0.10)
+  - Removing phpstan/phpstan (2.1.17)
+  - Removing php-debugbar/php-debugbar (v2.1.6)
+  - Removing phar-io/version (3.2.1)
+  - Removing phar-io/manifest (2.0.4)
+  - Removing orangehill/iseed (v3.1.1)
+  - Removing nunomaduro/collision (v8.8.2)
+  - Removing myclabs/deep-copy (1.13.3)
+  - Removing mockery/mockery (1.6.12)
+  - Removing larastan/larastan (v3.5.0)
+  - Removing iamcal/sql-parser (v0.6)
+  - Removing hamcrest/hamcrest-php (v2.1.1)
+  - Removing filp/whoops (2.18.3)
+  - Removing fakerphp/faker (v1.24.1)
+  - Removing barryvdh/laravel-debugbar (v3.15.4)
+Generating optimized autoload files
+> Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> @php artisan package:discover --ansi
+
+   INFO  Discovering packages.  
+
+  laravel/horizon ....................................................................................................... DONE
+  laravel/octane ........................................................................................................ DONE
+  laravel/sanctum ....................................................................................................... DONE
+  laravel/tinker ........................................................................................................ DONE
+  nesbot/carbon ......................................................................................................... DONE
+  nunomaduro/termwind ................................................................................................... DONE
+
+60 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+🗄️ Running database migrations...
+
+   INFO  Running migrations.  
+
+  2024_03_20_000001_add_telegram_fields_to_users_table ........................................................... 3.15ms FAIL
+
+In Connection.php line 822:
+                                                                                                                               
+  SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'telegram_id' (Connection: mysql, SQL: alter table `v2_u  
+  ser` add `telegram_id` bigint null after `email`)                                                                            
+                                                                                                                               
+
+In Connection.php line 568:
+                                                                                    
+  SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'telegram_id'  
+                                                                                    
+
+🧹 Clearing caches...
+
+   INFO  Configuration cache cleared successfully.  
+
+
+   INFO  Application cache cleared successfully.  
+
+
+   INFO  Route cache cleared successfully.  
+
+
+   INFO  Compiled views cleared successfully.  
+
+🔑 Checking application key...
+⚡ Optimizing for production...
+
+   INFO  Configuration cached successfully.  
+
+
+   INFO  Routes cached successfully.  
+
+
+
+   INFO  Blade templates cached successfully.  
+
+📡 Setting up Telegram webhook...
+
+   Illuminate\Database\QueryException  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'topnft.v2_telegram_bot_settings' doesn't exist (Connection: mysql, SQL: select * from `v2_telegram_bot_settings` limit 1).
+
+🔗 Creating storage links...
+
+   INFO  The [public/storage] link has been connected to [storage/app/public].  
+
+🔐 Setting final permissions...
+chown: cannot access '/app': No such file or directory
+chmod: cannot access '/app': No such file or directory
+chmod: cannot access '/app/storage': No such file or directory
+
+✅ Setup completed successfully!
+
+🎯 Your Xboard is now ready with Telegram integration:
+   • Domain: https://top.netflare.co
+   • Bot: @netflarechina
+   • Telegram login/signup: ENABLED
+
+📋 Next steps:
+   1. Login to admin panel: https://top.netflare.co/admin
+   2. Check Telegram settings in admin dashboard
+   3. Test Telegram login on your site
+
+🚀 Everything is configured and ready to use!
+✅ Xboard with Telegram integration is ready!
+📱 Telegram login/signup is now available at your domain
+🎯 Bot: @netflarechina is configured and ready
+root@vultr:/www/wwwroot/top.netflare.co# 
