@@ -1,0 +1,223 @@
+95 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+📦 Running Xboard installation...
+__    __ ____                      _  
+\ \  / /| __ )  ___   __ _ _ __ __| | 
+ \ \/ / | __ \ / _ \ / _` | '__/ _` | 
+ / /\ \ | |_) | (_) | (_| | | | (_| | 
+/_/  \_\|____/ \___/ \__,_|_|  \__,_| 
+
+ ┌ 请选择数据库类型 ────────────────────────────────────────────┐
+ │ MySQL                                                        │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ 请输入MySQL数据库地址 ───────────────────────────────────────┐
+ │ 127.0.0.1                                                    │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ 请输入MySQL数据库端口 ───────────────────────────────────────┐
+ │ 3306                                                         │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ 请输入MySQL数据库名 ─────────────────────────────────────────┐
+ │ topnftt                                                      │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ 请输入MySQL数据库用户名 ─────────────────────────────────────┐
+ │ topnftt                                                      │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ 请输入MySQL数据库密码 ───────────────────────────────────────┐
+ │ topnftt                                                      │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ 请输入Redis地址 ─────────────────────────────────────────────┐
+ │ 127.0.0.1                                                    │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ 请输入Redis端口 ─────────────────────────────────────────────┐
+ │ 6379                                                         │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ 请输入redis密码(默认: null) ─────────────────────────────────┐
+ │                                                              │
+ └──────────────────────────────────────────────────────────────┘
+
+ ┌ 请输入管理员账号 ────────────────────────────────────────────┐
+ │ admin@demo.com                                               │
+ └──────────────────────────────────────────────────────────────┘
+
+   INFO  Configuration cached successfully.  
+
+正在导入数据库请稍等...
+
+   INFO  Preparing database.  
+
+  Creating migration table ....................................................................................... 5.63ms DONE
+
+   INFO  Running migrations.  
+
+  2019_08_19_000000_create_failed_jobs_table ..................................................................... 3.53ms DONE
+  2019_12_14_000001_create_personal_access_tokens_table .......................................................... 9.43ms DONE
+  2023_03_19_000000_create_v2_tables ............................................................................ 93.26ms DONE
+  2023_08_14_221234_create_v2_settings_table ..................................................................... 2.61ms DONE
+  2023_09_04_190923_add_column_excludes_to_server_table ......................................................... 17.12ms DONE
+  2023_09_06_195956_add_column_ips_to_server_table .............................................................. 18.16ms DONE
+  2023_09_14_013244_add_column_alpn_to_server_hysteria_table ..................................................... 3.75ms DONE
+  2023_09_24_040317_add_column_network_and_network_settings_to_v2_server_trojan .................................. 7.38ms DONE
+  2023_09_29_044957_add_column_version_and_is_obfs_to_server_hysteria_table ...................................... 5.98ms DONE
+  2023_11_19_205026_change_column_value_to_v2_settings_table ..................................................... 6.79ms DONE
+  2023_12_12_212239_add_index_to_v2_user_table ................................................................... 4.87ms DONE
+  2024_03_19_103149_modify_icon_column_to_v2_payment_table ....................................................... 4.40ms DONE
+  2024_03_20_000001_add_telegram_fields_to_users_table ........................................................... 1.22ms DONE
+  2024_03_20_000002_create_telegram_bot_settings_table ........................................................... 5.20ms DONE
+  2025_01_01_130644_modify_commission_status_in_v2_order_table ................................................... 6.32ms DONE
+  2025_01_04_optimize_plan_table ................................................................................ 32.81ms DONE
+  2025_01_05_131425_create_v2_server_table ...................................................................... 19.70ms DONE
+  2025_01_10_152139_add_device_limit_column ..................................................................... 13.25ms DONE
+  2025_01_12_190315_add_sort_to_v2_notice_table .................................................................. 7.29ms DONE
+  2025_01_12_200936_modify_commission_status_in_v2_order_table ................................................... 4.88ms DONE
+  2025_01_13_000000_convert_order_period_fields .................................................................. 2.31ms DONE
+  2025_01_15_000002_add_stat_performance_indexes ................................................................ 63.06ms DONE
+  2025_01_16_142320_add_updated_at_index_to_v2_order_table ....................................................... 3.74ms DONE
+  2025_01_18_140511_create_plugins_table ......................................................................... 6.48ms DONE
+  2025_06_21_000001_optimize_v2_settings_table ................................................................... 8.54ms DONE
+  2025_06_21_000002_create_traffic_reset_logs_table ............................................................. 12.72ms DONE
+  2025_06_21_000003_add_traffic_reset_fields_to_users ........................................................... 14.35ms DONE
+  2025_07_01_081556_add_tags_to_v2_plan_table .................................................................... 3.55ms DONE
+
+
+数据库导入完成
+开始注册管理员账号
+🎉：一切就绪
+管理员邮箱：admin@demo.com
+管理员密码：8544b3d4436713fb926a08a24d6909e6
+访问 http(s)://你的站点/d39ae03a 进入管理面板，你可以在用户中心修改你的密码。
+🔧 Setting up Telegram integration...
+🔧 EMERGENCY FIX: Xboard Telegram Integration
+Fixing all installation issues...
+📁 Current directory: /www/wwwroot/top.netflare.co
+🗄️ Step 1: Fixing database issues...
+
+   INFO  Rolling back migrations.  
+
+  2025_07_01_081556_add_tags_to_v2_plan_table .................................................................... 5.62ms DONE
+  2025_06_21_000003_add_traffic_reset_fields_to_users ............................................................ 5.80ms DONE
+  2025_06_21_000002_create_traffic_reset_logs_table .............................................................. 1.78ms DONE
+  2025_06_21_000001_optimize_v2_settings_table ................................................................... 8.50ms DONE
+  2025_01_18_140511_create_plugins_table ......................................................................... 1.93ms DONE
+  2025_01_16_142320_add_updated_at_index_to_v2_order_table ....................................................... 2.87ms DONE
+  2025_01_15_000002_add_stat_performance_indexes ................................................................ 47.86ms DONE
+  2025_01_13_000000_convert_order_period_fields .................................................................. 2.52ms DONE
+  2025_01_12_200936_modify_commission_status_in_v2_order_table ................................................... 5.37ms DONE
+  2025_01_12_190315_add_sort_to_v2_notice_table .................................................................. 3.09ms DONE
+  2025_01_10_152139_add_device_limit_column ..................................................................... 11.35ms DONE
+  2025_01_05_131425_create_v2_server_table ...................................................................... 19.00ms DONE
+  2025_01_04_optimize_plan_table ................................................................................ 52.20ms DONE
+  2025_01_01_130644_modify_commission_status_in_v2_order_table ................................................... 4.50ms DONE
+  2024_03_20_000002_create_telegram_bot_settings_table ........................................................... 1.86ms DONE
+  2024_03_20_000001_add_telegram_fields_to_users_table ........................................................... 1.46ms FAIL
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42000]: Syntax error or access violation: 1091 Can't DROP INDEX `v2_user_telegram_id_index`; check that it exists (Connection: mysql, SQL: alter table `v2_user` drop index `v2_user_telegram_id_index`)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:822
+    818▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    819▕                 );
+    820▕             }
+    821▕ 
+  ➜ 822▕             throw new QueryException(
+    823▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    824▕             );
+    825▕         }
+    826▕     }
+
+      +9 vendor frames 
+
+  10  database/migrations/2024_03_20_000001_add_telegram_fields_to_users_table.php:36
+      Illuminate\Support\Facades\Facade::__callStatic()
+      +25 vendor frames 
+
+  36  artisan:35
+      Illuminate\Foundation\Console\Kernel::handle()
+
+No migrations to reset
+
+   INFO  Application cache cleared successfully.  
+
+
+   INFO  Configuration cache cleared successfully.  
+
+👥 Step 2: Adding Telegram columns to users table...
+Added column: telegram_username
+Added column: telegram_first_name
+Added column: telegram_last_name
+Added column: telegram_photo_url
+Added column: telegram_linked_at
+Fixed telegram_id column type
+🤖 Step 3: Creating/updating Telegram bot settings...
+Telegram bot settings table created and configured successfully!
+📡 Step 4: Setting up Telegram webhook...
+PHP Warning:  Trying to access array offset on null in Command line code on line 3
+
+Warning: Trying to access array offset on null in Command line code on line 3
+Webhook setup failed: Unknown error
+🔍 Step 5: Testing bot token...
+PHP Warning:  Trying to access array offset on null in Command line code on line 3
+
+Warning: Trying to access array offset on null in Command line code on line 3
+Bot token test failed!
+👤 Step 6: Checking admin user...
+Admin user not found - you may need to create it through xboard:install
+🧹 Step 7: Clearing caches and optimizing...
+
+   INFO  Configuration cache cleared successfully.  
+
+
+   INFO  Application cache cleared successfully.  
+
+
+   INFO  Route cache cleared successfully.  
+
+
+   INFO  Compiled views cleared successfully.  
+
+
+   INFO  Configuration cached successfully.  
+
+
+   INFO  Routes cached successfully.  
+
+🔐 Step 8: Setting permissions...
+
+✅ ALL FIXES APPLIED SUCCESSFULLY!
+
+🎯 Your Xboard should now have:
+   ✓ Telegram database tables created
+   ✓ Bot configured: @netflaretgbot
+   ✓ Webhook setup: https://top.netflare.co/api/v1/telegram/webhook
+   ✓ Login/Signup enabled
+   ✓ Admin user: aalmitech@gmail.com
+
+🧪 Test your setup:
+   1. Visit: https://top.netflare.co/telegram-test.html
+   2. Try Telegram login
+   3. Check admin panel for Telegram settings
+
+🔧 If you still have issues, check the admin panel logs!
+
+✅ INSTALLATION COMPLETED!
+
+🎯 Your Xboard is ready:
+   • Admin: aalmitech@gmail.com
+   • Domain: https://top.netflare.co
+   • Telegram Bot: @netflaretgbot
+   • Test page: https://top.netflare.co/telegram-test.html
+
+🚀 Telegram login/signup is now available!
+root@vultr:/www/wwwroot/top.netflare.co# fix_telegram.sh
+-bash: fix_telegram.sh: command not found
+root@vultr:/www/wwwroot/top.netflare.co# verify_telegram.sh
+-bash: verify_telegram.sh: command not found
+root@vultr:/www/wwwroot/top.netflare.co# 
